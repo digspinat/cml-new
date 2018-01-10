@@ -3,143 +3,92 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://carmanualslib.com/about-page/</loc>
+    <loc>https://www.example.com/post/creating-a-new-theme/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://carmanualslib.com/about-us/</loc>
+    <loc>https://www.example.com/post/migrate-from-jekyll/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://carmanualslib.com/contact-page/</loc>
+    <loc>https://www.example.com/about/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://carmanualslib.com/contact/</loc>
+    <loc>https://www.example.com/contact/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://carmanualslib.com/faq-page/</loc>
+    <loc>https://www.example.com/post/goisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://carmanualslib.com/tekst-manual-fact-sm-page/</loc>
+    <loc>https://www.example.com/post/hugoisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://carmanualslib.com/privacy-page/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/delivery/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/refund-page/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/null/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/faq/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/terms-of-service/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/returns-policy/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/bmw-5-series-e60-e61/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/manual/audi/</loc>
+    <loc>https://www.example.com/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://carmanualslib.com/audi-a4-b8-8k/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/audi-q5-8r/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/audi-tt-mk2-8j/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/bmw-3-series-e46/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/bmw-3-series-e90-e91-e93/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/bmw-x5-e53/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/bmw-x5-e70/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/manual/bmw/</loc>
+    <loc>https://www.example.com/tags/development/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://carmanualslib.com/</loc>
+    <loc>https://www.example.com/tags/go/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://carmanualslib.com/home-page/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/home/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/manual/</loc>
+    <loc>https://www.example.com/tags/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://carmanualslib.com/manuals/</loc>
+    <loc>https://www.example.com/tags/hugo/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://carmanualslib.com/manual/mercedes/</loc>
+    <loc>https://www.example.com/post/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://carmanualslib.com/mercedes-benz-m-class-ml-w163/</loc>
-  </url>
-  
-  <url>
-    <loc>https://carmanualslib.com/tags/</loc>
+    <loc>https://www.example.com/tags/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://carmanualslib.com/topics/</loc>
+    <loc>https://www.example.com/tags/templates/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://carmanualslib.com/footer/</loc>
+    <loc>https://www.example.com/tags/themes/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.example.com/topics/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

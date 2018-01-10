@@ -1,0 +1,212 @@
+body {
+    color: #777;
+}
+.subMenuItem a {
+  color: black;
+}
+.subMenuItem a:visited {
+  color: black;
+}
+.subMenuItem a:hover {
+  color: white;
+  background-color: #0085da;
+}
+.footerLayout{
+  background: #181d1e;
+  color: white;
+  padding: 20px;
+}
+.mainContentLayout{
+  min-height: 60vh;
+}
+.MainHeaderLayout{
+  background-color: #f9fafc;
+  height: 80px;
+  text-align: center;
+  line-height: 75px;
+  color: black;
+}
+.subMenu{
+  background-color: #e1e9ee;
+  position: fixed;
+  width: 100%;
+  top: 100px;
+}
+.mainMenu{
+  position: fixed;
+  width: 100%;
+  background-color: #7a8690;
+  top: 0;
+  z-index: 1;
+}
+.pure-menu-heading{
+  margin: 0;
+  padding: 10px;
+}
+.custom-brand a{
+  color: white;
+  font-size: 20px;
+  margin: 0;
+}
+.custom-brand a:active{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.custom-brand a:visited{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.custom-brand a:hover{
+  text-decoration: none;
+}
+.mainLayout{
+  background-color: #7a8690;
+}
+.subChangeLayout{
+  background-color: #7a8690;
+}
+.contentLayout{
+  max-width: 1266px;
+  min-height: 60vh;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 149px;
+}
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+.mainMenuLayout {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.myMainMenu li a{
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  display: block;
+  padding: 10px;
+}
+.myMainMenu li a:hover{
+  color: white;
+  text-decoration: none;
+  background-color: black;
+}
+.custom-wrapper {
+    margin-bottom: 1em;
+    -webkit-font-smoothing: antialiased;
+    height: 2.2em;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+}
+.custom-wrapper.open {
+    height: 8em;
+}
+.custom-menu-3 {
+    text-align: right;
+}
+.custom-toggle {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+.custom-toggle .bar {
+    background-color: white;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 18px;
+    right: 7px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.custom-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+.custom-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.custom-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 47.999em) {
+    .custom-menu-3 {
+        text-align: left;
+    }
+    .custom-toggle {
+        display: block;
+    }
+    .myMainMenu li a{
+      font-size: 16px;
+    }
+    .subMenu{
+      width: 100%;
+    }
+    .subChangeLayout{
+      background-color: #e1e9ee;
+    }
+}
+@media screen and (max-width: 961px) and (min-width: 959px) {
+  .contentLayout{
+    max-width: 800px;
+    min-height: 60vh;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 149px;
+  }
+}
+/*@media (max-width: 960px) {
+
+}*/
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+  .contentLayout{
+    max-width: 854px;
+    min-height: 60vh;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 149px;
+  }
+}
+
+@media screen and (max-width: 1365px) and (min-width: 1280px) {
+  .contentLayout{
+    max-width: 1066px;
+    min-height: 60vh;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 149px;
+  }
+}
+
+@media screen and (max-width: 1377px) and (min-width: 1366px) {
+  .contentLayout{
+    max-width: 1138px;
+    min-height: 60vh;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 149px;
+  }
+}

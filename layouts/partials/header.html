@@ -4,8 +4,25 @@
 {{ partial "head.html" . }}
 
 <body>
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJSML6F"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  {{ partial "mainmenu.html" . }}
-<!-- <div id="layout">
-  <div id="main"> -->
+  <div class="mainLayout">
+    <div class="pure-g mainMenu">
+        <div class="mainMenuLayout pure-u-20-24">
+          {{ partial "mainmenu.html" .}}
+        </div>
+    </div>
+    <div class="pure-g subMenu">
+        <div class="pure-u-2-24 subChangeLayout" style=""></div>
+        <div class="pure-u-20-24">
+            {{partial "subMenu.html" .}}
+        </div>
+        <div class="pure-u-2-24 subChangeLayout"></div>
+    </div>
+    <div class="contentLayout">
+      <div class="MainHeaderLayout">
+        <h2>
+          {{ .Site.Title }}
+        </h2>
+      </div>
+      <div class="mainContentLayout">
+
+      </div>

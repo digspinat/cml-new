@@ -1,128 +1,18 @@
-<!-- </div>
-</div> -->
-<div class="my-footer">
-  <div class="my_ex_body" style="background-color:#181c1e;">
-    <div class="pure-g">
-      <div class="pure-u-1-4">
-        <h2 class="my-active" style="background-color:#181c1e;font-size:16px;text-align:left;">Customer service</h2>
-        <div class="pure-menu custom-restricted-width">
-          <ul class="pure-menu-list gcm-nav">
-            {{ range .Site.Pages.ByWeight }}
-              {{ if eq .Params.mytype "pages" }}
-                {{ if eq .Title "Returns and Refunds Policy " }}
-                  <li class="pure-menu-item"><a href="{{ .Permalink }}" class="pure-menu-link">{{ .Title }}</a></li>
-                {{ end }}
-                {{ if eq .Title "Delivery" }}
-                  <li class="pure-menu-item"><a href="{{ .Permalink }}" class="pure-menu-link">{{ .Title }}</a></li>
-                {{ end }}
-                {{ if eq .Title "Privacy policy" }}
-                  <li class="pure-menu-item"><a href="{{ .Permalink }}" class="pure-menu-link">{{ .Title }}</a></li>
-                {{ end }}
-                {{ if eq .Title "Terms of service" }}
-                  <li class="pure-menu-item"><a href="{{ .Permalink }}" class="pure-menu-link">{{ .Title }}</a></li>
-                {{ end }}
-                {{ if eq .Title "Contact" }}
-                  <li class="pure-menu-item"><a href="{{ .Permalink }}" class="pure-menu-link">{{ .Title }}</a></li>
-                {{ end }}
-              {{ end }}
-            {{ end }}
-          </ul>
-        </div>
-      </div>
-      <div class="pure-u-1-4">
-        <h2 class="my-active" style="background-color:#181c1e;font-size:16px;text-align:left;">Car makes</h2>
-        <div class="pure-menu custom-restricted-width">
-          <ul class="pure-menu-list gcm-nav">
-              <li class="pure-menu-item"><a href="/manual/audi/" class="pure-menu-link">Audi</a></li>
-              <li class="pure-menu-item"><a href="/manual/bmw/" class="pure-menu-link">BMW</a></li>
-              <li class="pure-menu-item"><a href="/manual/mercedes/" class="pure-menu-link">Mercedes</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="pure-u-1-4"></div>
-      <div class="pure-u-1-4">
-        <h2 class="my-active" style="background-color:#181c1e;font-size:16px;text-align:left;">Quick links</h2>
-        <div class="pure-menu custom-restricted-width">
-          <ul class="pure-menu-list gcm-nav">
-            {{ range .Site.Pages.ByWeight }}
-              {{ if eq .Params.myid "menutop" }}
-                {{ if eq .Title "Home" }}
-                  <li class="pure-menu-item"><a href="{{ $.Site.BaseURL }}" class="pure-menu-link">{{ .Title }}</a></li>
-                {{ else }}
-                  <li class="pure-menu-item"><a href="{{ .Permalink }}" class="pure-menu-link">{{ .Title }}</a></li>
-                {{ end }}
-              {{ end }}
-            {{ end }}
-            <li class="pure-menu-item"><a href="#" class="snipcart-checkout pure-menu-link"><span class="snipcart-summary">(<span class="snipcart-total-items"></span>)</span>Checkout</a></li>
-              <!-- <li class="pure-menu-item"><a href="/manual/audi/" class="pure-menu-link">Audi</a></li>
-              <li class="pure-menu-item"><a href="/manual/bmw/" class="pure-menu-link">BMW</a></li>
-              <li class="pure-menu-item"><a href="/manual/mercedes/" class="pure-menu-link">Mercedes</a></li> -->
-          </ul>
+      <div class="footerLayout">
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-3">
+              <h4>Footer Layout 1</h4>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+              <h4>Footer Layout 2</h4>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+              <h4>Footer Layout 3</h4>
+            </div>
         </div>
       </div>
     </div>
-    <br><br>
   </div>
-</div>
-
-{{ partial "google_analytics.html" . }}
-<script>
-      $(document).ready(function(){
-        var lang_code = $("#lang_code").val();
-        if(lang_code == "en"){
-
-        }else{
-
-        }
-        $("#lang_url").change(function(){
-          window.location = $(this).val();
-        });
-      });
-      (function (window, document) {
-      var menu1 = document.getElementById('menu1'),
-          WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
-
-      function toggleHorizontal() {
-          [].forEach.call(
-              document.getElementById('menu1').querySelectorAll('.custom-can-transform'),
-              function(el){
-                  el.classList.toggle('pure-menu-horizontal');
-              }
-          );
-      };
-
-      function togglemenu() {
-          // set timeout so that the panel has a chance to roll up
-          // before the menu1 switches states
-          if (menu1.classList.contains('open')) {
-              setTimeout(toggleHorizontal, 500);
-          }else{
-              toggleHorizontal();
-          }
-          menu1.classList.toggle('open');
-          document.getElementById('toggle').classList.toggle('x');
-          var d = document.getElementById("div1");
-      };
-
-      function closemenu() {
-          if (menu1.classList.contains('open')){
-              togglemenu();
-          }
-      }
-
-      document.getElementById('toggle').addEventListener('click', function (e) {
-          togglemenu();
-          e.preventDefault();
-      });
-
-      window.addEventListener(WINDOW_CHANGE_EVENT, closemenu);
-      })(this, this.document);
-</script>
-<script>
-    Snipcart.execute('registerLocale', 'en', {
-      powered_by:
-        "Carmanuals Libs"
-    });
-</script>
+<script src="{{ .Site.BaseURL }}js/ui.js"></script>
 </body>
 </html>

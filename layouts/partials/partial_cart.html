@@ -1,9 +1,0 @@
-<div class="row padding-top">
-  <div class="col-md-12">
-    {{ range .Site.Pages }}
-      {{ if eq .Title "Add to cart" }}
-        {{ .Content | safeHTML }}
-      {{ end }}
-    {{ end }}
-  </div>
-</div> 
