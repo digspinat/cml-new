@@ -1,0 +1,76 @@
+<head>
+  <meta name="google-site-verification" content="U_CGoFpg6s2wB0dvegjikSlFw7ZQcT9j9aQVo7tNlkA" />
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PJSML6F');</script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
+  {{.Hugo.Generator}}
+
+  <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+
+  <!-- CSS -->
+  {{ $purecss := "https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/" }}
+  <link rel="stylesheet" href="/css/purecss.css">
+  <script  type="text/javascript" src="/js/jquery.js"></script>
+  <!-- <link rel="stylesheet" href="/css/bootstrap.css"> -->
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="/css/lumos.css"> -->
+  <!-- <script  type="text/javascript" src="/js/bootstrapjs.js"></script> -->
+
+  <script src="/js/algolia.js"></script>
+  <link rel="stylesheet" href="/css/purecssgrid.css">
+
+  <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
+  <!-- <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="S_ZDgzNGJkMmItYTk1YS00NDAwLWI4ZTctNDViMjg3OTdlNzNkNjM2NDU1Njc0MjQxMzU5Njg4" id="snipcart"></script> -->
+  <script type="text/javascript" id="snipcart" src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="ZjllMTk2OGUtYWVhNy00ZTgxLWEwNWQtOWY4OWFkMjUxODZmNjM2NDQyOTA1MDk3NDI0NTMz"></script>
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css"> -->
+<!--<![endif]-->
+
+  {{ "<!--[if lte IE 8]>" | safeHTML }}
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  {{ "<![endif]-->" | safeHTML }}
+  {{ "<!--[if gt IE 8]><!-->" | safeHTML }}
+  <!-- <link rel="stylesheet" href="/css/side-menu.css"> -->
+  {{ "<!--<![endif]-->" | safeHTML }}
+
+  <!-- <link rel="stylesheet" href="/css/blackburn.css"> -->
+
+  <!-- Icons -->
+
+  <!-- Fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css"> -->
+
+  <!-- RSS -->
+  {{ if .RSSLink }}
+  <!-- <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .RSSLink }}" /> -->
+  {{ end }}
+
+  {{ with .Site.Params.highlightjs }}
+  <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/{{ . }}.min.css"> -->
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script> -->
+  {{ range $.Site.Params.highlightjs_extra_languages }}
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{ . }}.min.js"></script> -->
+  {{ end }}
+  <!-- <script>hljs.initHighlightingOnLoad();</script> -->
+  {{ end }}
+
+  {{ partial "favicon.html" . }}
+
+  {{ range .Site.Params.custom_css }}
+    <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+  {{ end }}
+  {{ range .Site.Params.custom_js }}
+    <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+  {{ end }}
+
+</head>

@@ -1,0 +1,27 @@
+author = "Yoshiharu Yamashita"
+baseurl = "https://carmanualslib.com/"
+canonifyurls = false
+copyright = "&copy; 2016. All rights reserved."
+paginate = 10
+title = "German Car Manuals"
+DefaultContentLanguage = "en"
+[indexes]
+product = "manual"
+tag = "tags"
+topic = "topics"
+[params]
+brand = "GCM"
+dateformat = "2006-01-02T00:00:00+00:00"
+disqus = "Your Disqus shortname"
+googleanalytics = "Your Google Analytics tracking ID"
+highlightjs = "androidstudio"
+subtitle = "A Hugo Theme"
+[social]
+facebook = "*"
+github = "yoshiharuyamashita"
+instagram = "*"
+linkedin = "*"
+stackoverflow = "*"
+twitter = "*"
+[taxonomy]
+product = "manual"

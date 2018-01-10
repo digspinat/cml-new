@@ -1,0 +1,6 @@
+- id: translations
+  translation: "Currency:"
+- id: mylangcode
+  translation: "cy"
+- id: sitetitle
+  translation: German Car Manual

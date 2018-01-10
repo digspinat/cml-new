@@ -1,0 +1,152 @@
+<div class="my_content">
+  <div class="my_ex_body_product">
+    <div class="">
+      <h2>{{ .Title }}</h2>
+    </div>
+    <div class="">
+      <div class="pure-g">
+        <div class="pure-u-1-2">
+          <img src="{{ .Params.imagecover }}" alt="Cinque Terre" style="margin-left:10px;">
+        </div>
+        <div class="pure-u-1-2">
+          <div class="" style="">
+            <span class="my-active" style="font-weight:bold;font-size:16px;">Price: {{ .Params.dataitemprice }}</span>
+            <!-- <div class="padding-top"> {{ .Params.sendowlmd | safeHTML }} </div> -->
+            <div class="padding-top">
+              <button
+                    class="snipcart-add-item"
+                    data-item-id="{{ .Params.dataitemid }}"
+                    data-item-name="{{ .Params.dataitemname }}"
+                    data-item-price="{{ .Params.dataitemprice }}"
+                    data-item-url="{{ .Params.dataitemurl }}"
+                    data-item-description="{{ .Params.dataItemfileguid }}"
+                    data-item-custom1-name="{{ .Params.dataitemcustomname }}"
+                    data-item-custom1-options="{{ .Params.dataitemcustomoptions }}"
+                    data-item-image="{{ .Params.dataitemimage }}"
+                    data-item-file-guid="{{ .Params.dataitemfileguid }}"
+                    data-item-shippable="{{ .Params.dataitemshippable }}"
+                    data-item-taxable="{{ .Params.dataitemtaxable }}"
+                    >
+                    &nbsp;
+                </button>
+            </div>
+            <div class="padding-top my-partial-addtocart"> {{ .Params.partialaddtocart | markdownify }} </div>
+            <div class="panel padding-top">
+              <div class="panel-heading">
+                  <h3 class="panel-title my-active">Car Specification</h3>
+              </div>
+              <div style="padding-left:20px;">
+                <div style="padding-top:27px;">
+                  <table width="60%" class="borderless" style="">
+                    <tr>
+                      <td class="gcm-header">Make</td>
+                      <td>{{ .Params.manual }}</td>
+                    </tr>
+                    <tr>
+                      <td class="gcm-header">Serie</td>
+                      <td>{{ .Params.series }}</td>
+                    </tr>
+                    <tr>
+                      <td class="gcm-header">Sub-serie</td>
+                      <td>{{ .Params.subseries }}</td>
+                    </tr>
+                    <tr>
+                      <td class="gcm-header">Platform</td>
+                      <td>{{ .Params.platform }}</td>
+                    </tr>
+                    <!-- <tr>
+                      <td class="gcm-header">Engine</td>
+                      <td>{{ .Params.engine }}</td>
+                    </tr> -->
+                    <tr>
+                      <td class="gcm-header">Year</td>
+                      <td>{{ .Params.manualyear }}</td>
+                    </tr>
+                    <tr>
+                      <td class="gcm-header">Body Type</td>
+                      <td>{{ .Params.bodytype }}</td>
+                    </tr>
+                    <tr>
+                      <td class="gcm-header">Fuel Type</td>
+                      <td>{{ .Params.fueltype }}</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pure-g">
+        <div class="pure-u-1-2">
+          <div class="row padding-top">
+                <h4 class="my-active" style="padding-left:80px;">Manual Specification</h4>
+                  <div class="col-sm-12" style="padding-left:96px;"> <br>
+                    <table class="borderless" width="70%">
+                      {{ range .Params.carspec }}
+                        <tr class="text-left">
+                          <td class="gcm-header">Manual Type:</td>
+                          <td>{{ .manualSpecType }}</td>
+                        </tr>
+                        <tr>
+                          <td class="gcm-header">No. of Pages:</td>
+                          <td>{{ .manualSpecNoOfPages }}</td>
+                        </tr>
+                        <tr>
+                          <td class="gcm-header">File Size:</td>
+                          <td>{{ .manualSpecFileSize }}</td>
+                        </tr>
+                        <tr>
+                          <td class="gcm-header">Format:</td>
+                          <td>{{ .manualSpecFormat }}</td>
+                        </tr>
+                        <tr>
+                          <td class="gcm-header">Language:</td>
+                          <td>{{ .manualSpecLanguage }}</td>
+                        </tr>
+                        <tr>
+                          <td class="gcm-header">Suitable for:</td>
+                          <td>{{ .suitableFor }}</td>
+                        </tr>
+                      {{ end }}
+                    </table>
+                  </div>
+          </div>
+        </div>
+        <div class="pure-u-1-2">
+          {{ partial "propsncons.html" . }}
+        </div>
+      </div>
+      <div class=" padding-top">
+        <h4 class="my-active" style="padding-left:80px;">Description</h4>
+        <div style="padding-left:100px;"> <br>
+            {{ .Content | markdownify }}
+        </div>
+      </div>
+      <div class="my-table" style="padding-left:100px;padding-right:30px;"> <br>
+          {{ .Params.manualcover | markdownify }}
+      </div>
+      {{ partial "tableofcontent.html" . }}
+      <div class="padding-top text-center">
+        <button
+              class="snipcart-add-item"
+              data-item-id="{{ .Params.dataitemid }}"
+              data-item-name="{{ .Params.dataitemname }}"
+              data-item-price="{{ .Params.dataitemprice }}"
+              data-item-url="{{ .Params.dataitemurl }}"
+              data-item-description="{{ .Params.dataItemfileguid }}"
+              data-item-custom1-name="{{ .Params.dataitemcustomname }}"
+              data-item-custom1-options="{{ .Params.dataitemcustomoptions }}"
+              data-item-image="{{ .Params.dataitemimage }}"
+              data-item-file-guid="{{ .Params.dataitemfileguid }}"
+              data-item-shippable="{{ .Params.dataitemshippable }}"
+              data-item-taxable="{{ .Params.dataitemtaxable }}"
+              >
+              &nbsp;
+          </button>
+      </div>
+      {{ partial "related_manual.html" . }}
+    </div>
+    <br>
+  </div>
+</div>

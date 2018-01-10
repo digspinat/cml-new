@@ -1,0 +1,14 @@
+{
+  "name": "gcm-dato",
+  "version": "1.0.0",
+  "description": "\"gcm\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gcm",
+  "license": "ISC",
+  "devDependencies": {
+    "datocms-client": "^0.3.34"
+  }
+}

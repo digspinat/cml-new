@@ -1,0 +1,19 @@
+{{ partial "header.html" . }}
+
+<div class="my_content">
+  {{ if eq .Type "product" }}
+    {{ partial "singleproduct.html" . }}
+  {{ end }}
+  {{ if eq .Type "topmenu" }}
+    {{ partial "page.html" . }}
+  {{ end }}
+</div>
+<!-- <div class="header">
+  <h1>{{ .Title }}</h1>
+  <h2>{{ .Description }}</h2>
+</div>
+<div class="content">
+  {{ .Content }}
+</div> -->
+
+{{ partial "footer.html" . }}
