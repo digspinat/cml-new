@@ -1,8 +1,9 @@
 {{ partial "header.html" . }}
+<input type="hidden" id="CatpageTile" value="{{.Title}}">
 <div class="mainContentLayout">
   <div class="main">
     <div class="leftAlgolia">
-      <p>Right Algolia</p>
+      <p>Left Algolia</p>
     </div>
     <div class="rightProduct">
       <div class="pure-g">
@@ -32,4 +33,10 @@
     </div>
   </div>
 </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    var title = $("#CatpageTile").val();
+    $("#HeaderTitle").text(title);
+  });
+</script>
 {{ partial "footer.html" . }}
