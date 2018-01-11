@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cml-new.netlify.com/about/</loc>
+  </url>
+  
+  <url>
     <loc>https://cml-new.netlify.com/</loc>
     <priority>0</priority>
   </url>
