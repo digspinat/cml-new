@@ -1,3 +1,23 @@
 <div class="mainContentLayout">
-  
+  <div class="productLayout">
+      <h3 class="productTitle">{{.Title}}</h3>
+      <div class="productImageArea">
+        <div class="ImageArea">
+          <img src="{{.Params.proimage}}" class="pure-img-responsive" alt="">
+        </div>
+        <div class="SendowlArea">
+          <div class="CurrencyArea">
+            <div class="Currency">
+              <h4 class="productTitle"><span class="BlueText">Currency: </span>{{.Params.currency}}</h4>
+            </div>
+            <div class="Rating">
+              <h4 class="productTitle"><span class="BlueText">Over all Rating: </span><div class="star-ratings-css">
+  <div class="star-ratings-css-top" style="width: {{.Params.overallrate}}%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+  <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+</div></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
 </div>

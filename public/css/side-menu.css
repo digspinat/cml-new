@@ -2,6 +2,40 @@ body {
     color: #777;
     /*height: 100%;*/
 }
+/*Product Page Layout CSS*/
+.BlueText {
+  color: #0085da;
+}
+.CurrencyArea{
+  width: 100%;
+}
+.Currency{
+  width: 30%;
+  float: left;
+}
+.Rating{
+  width: 50%;
+  float: right;
+}
+.productLayout {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.productTitle{
+  color: black;
+}
+.productImageArea{
+  width: 100%;
+}
+.ImageArea{
+  width: 50%;
+  float: left;
+}
+.SendowlArea{
+  width: 50%;
+  float: right;
+}
+/*End Product Page Layout CSS*/
 /*Product CSS*/
 .productBox{
   margin-top: 20px;
@@ -200,6 +234,54 @@ body {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
+/*Star Rating */
+.star-ratings-css {
+  unicode-bidi: bidi-override;
+  color: #c5c5c5;
+  font-size: 25px;
+  height: 25px;
+  width: 100px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  text-shadow: 0px 1px 0 #a2a2a2;
+  display: inline-block;
+  vertical-align: middle;
+}
+.star-ratings-css-top {
+  color: #e7711b;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.star-ratings-css-bottom {
+  padding: 0;
+  display: block;
+  z-index: 0;
+}
+.star-ratings-sprite {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+  font-size: 0;
+  height: 21px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 110px;
+  margin: 0 auto;
+}
+.star-ratings-sprite-rating {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2605/star-rating-sprite.png") repeat-x;
+  background-position: 0 100%;
+  float: left;
+  height: 21px;
+  display: block;
+}
+/*End Star*/
 @media screen and (max-width: 376px) and (min-width: 374px) {
   .productDesc{
     color: black;
@@ -242,6 +324,29 @@ body {
       padding-right: 90px;
       position: relative;
     }
+    .productLayout{
+      padding: 8px;
+    }
+    .ImageArea{
+      clear: both;
+      width: 100%;
+      padding: 0;
+    }
+    .SendowlArea{
+      clear: both;
+      width: 100%;
+      padding: 0;
+    }
+    .Currency{
+      clear: both;
+      width: 100%;
+      padding: 0;
+    }
+    .Rating{
+      clear: both;
+      width: 100%;
+      padding: 0;
+    }
 }
 @media screen and (max-width: 961px) and (min-width: 959px) {
   .contentLayout{
@@ -257,6 +362,9 @@ body {
     padding-right: 44px;
     position: relative;
   }
+  .productLayout{
+    padding: 8px;
+  }
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
   .contentLayout{
@@ -271,6 +379,9 @@ body {
     padding-left: 15px;
     padding-right: 44px;
     position: relative;
+  }
+  .productLayout{
+    padding: 8px;
   }
 }
 
@@ -288,6 +399,9 @@ body {
     padding-right: 44px;
     position: relative;
   }
+  .productLayout{
+    padding: 8px;
+  }
 }
 
 @media screen and (max-width: 1377px) and (min-width: 1366px) {
@@ -303,5 +417,8 @@ body {
     padding-left: 50px;
     padding-right: 44px;
     position: relative;
+  }
+  .productLayout{
+    padding: 8px;
   }
 }
