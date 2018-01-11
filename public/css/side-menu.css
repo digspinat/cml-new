@@ -169,7 +169,7 @@ body {
       background-color: #e1e9ee;
     }
 }
-@media (min-width: 960px) {
+@media screen and (max-width: 961px) and (min-width: 959px) {
   .contentLayout{
     max-width: 800px;
     min-height: 60vh;
@@ -178,9 +178,32 @@ body {
     margin-top: 149px;
   }
 }
-@media (max-width: 1024px) {
+/*@media (max-width: 960px) {
+
+}*/
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
   .contentLayout{
     max-width: 854px;
+    min-height: 60vh;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 149px;
+  }
+}
+
+@media screen and (max-width: 1365px) and (min-width: 1280px) {
+  .contentLayout{
+    max-width: 1066px;
+    min-height: 60vh;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 149px;
+  }
+}
+
+@media screen and (max-width: 1377px) and (min-width: 1366px) {
+  .contentLayout{
+    max-width: 1138px;
     min-height: 60vh;
     background-color: white;
     margin: 0 auto;
