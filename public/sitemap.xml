@@ -3,11 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://cml-new.netlify.com/about/</loc>
+    <loc>https://cml-new.netlify.com/103003/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cml-new.netlify.com/aboutus/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cml-new.netlify.com/makes/audi/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cml-new.netlify.com/103006/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cml-new.netlify.com/103005/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cml-new.netlify.com/103004/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cml-new.netlify.com/makes/bmw/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cml-new.netlify.com/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cml-new.netlify.com/makes/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cml-new.netlify.com/manual/</loc>
     <priority>0</priority>
   </url>
   

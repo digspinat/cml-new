@@ -1,0 +1,35 @@
+{{ partial "header.html" . }}
+<div class="mainContentLayout">
+  <div class="main">
+    <div class="leftAlgolia">
+      <p>Right Algolia</p>
+    </div>
+    <div class="rightProduct">
+      <div class="pure-g">
+          {{range .Data.Pages}}
+            {{if eq .Type "manual"}}
+              <div class="pure-u-1 pure-u-md-1-3">
+                <div class="productBox">
+                  <div class="productImage">
+                    <a href="{{.Permalink}}"><img src="{{.Params.catimage}}" alt=""></a>
+                  </div>
+                  <div class="productDesc">
+                    <a href="{{.Permalink}}">{{.Title}}</a>
+                    <ul>
+                        <li>Make: {{.Params.makes}}</li>
+                        <li>Series: {{.Params.series}}</li>
+                        <li>Subseries: {{.Params.subseries}}</li>
+                        <li>Platform: {{.Params.platform}}</li>
+                        <li>Year: {{.Params.years}}</li>
+                    </ul>
+                    <a href="{{.Permalink}}" class="ProductBorderButton">More Info</a>
+                  </div>
+                </div>
+              </div>
+            {{end}}
+          {{end}}
+      </div>
+    </div>
+  </div>
+</div>
+{{ partial "footer.html" . }}

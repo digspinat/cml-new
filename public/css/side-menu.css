@@ -34,6 +34,9 @@ body {
   padding: 10px;
 }
 /*End Product CSS*/
+.myElement:first-letter{
+  text-transform: capitalize;
+}
 .subMenuItem a {
   color: black;
 }

@@ -3,13 +3,18 @@ languageCode = "en-us"
 title = "Carmanuls Lib"
 author = "Carmanuls Lib"
 copyright = "&copy; 2016. All rights reserved."
-canonifyurls = true
+contentDir = "content"
+layoutDir = "layouts"
+publishDir = "public"
 paginate = 10
 
 [indexes]
   tag = "tags"
   topic = "topics"
+  make = "makes"
 
+[permalinks]
+  manual = "/:section/:title/"
 [params]
   # Shown in the home page
   subtitle = "German Car Manuals"

@@ -1,3 +1,46 @@
-[{
-  "data": "json"
-  }]
+[
+  {
+    "make": "Audi",
+    "series": "--",
+    "platform": "B8 - 8K",
+    "years": "2008-2014",
+    "bodytype": "Saloon & Wagon",
+    "fueltype": "Petrol & diesel",
+    "title": "Audi A4 B8 - 8K | Service & repair manual | 2008 - 2014 | ",
+    "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103006.jpg",
+    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103006.jpg"
+  },
+  {
+    "make": "Audi",
+    "series": "--",
+    "platform": "B8 (Typ 8R)",
+    "years": "2009-2017",
+    "bodytype": "SUV",
+    "fueltype": "Petrol & diesel",
+    "title": "Audi Q5 (8R) |Repair & service manual | 2009 - 2017 ",
+    "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103005.jpg",
+    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103005.jpg"
+  },
+  {
+    "make": "Audi",
+    "series": "--",
+    "platform": "B8 - 8K",
+    "years": "2008-2014",
+    "bodytype": "Saloon & Wagon",
+    "fueltype": "Petrol & diesel",
+    "title": "Audi TT (MK2) Workshop manual (8J) | 2006 - 2014 Roadster + Coupe ",
+    "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103004.jpg",
+    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103004.jpg"
+  },
+  {
+    "make": "BMW",
+    "series": "--",
+    "platform": "Mk2 (Type 8J)",
+    "years": "2006-2014",
+    "bodytype": "Roadster + Coupe ",
+    "fueltype": "Diesel",
+    "title": " BMW  5 series | Service & repair manual |E60 (saloon) E61(wagon) | 2003 -2010 ",
+    "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103003.jpg",
+    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103003.jpg"
+  }
+]

@@ -1,81 +1,31 @@
 <div class="main">
   <div class="leftAlgolia">
-    <p>Right Algolia</p>
+    <p>Left Algolia</p>
   </div>
   <div class="rightProduct">
     <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-1-3">
-          <div class="productBox">
-            <div class="productImage">
-              <img src="{{$.Site.BaseURL}}img/103003.jpg" alt="">
+        {{range .Data.Pages}}
+          {{if eq .Type "manual"}}
+            <div class="pure-u-1 pure-u-md-1-3">
+              <div class="productBox">
+                <div class="productImage">
+                  <a href="{{.Permalink}}"><img src="{{.Params.catimage}}" alt=""></a>
+                </div>
+                <div class="productDesc">
+                  <a href="{{.Permalink}}">{{.Title}}</a>
+                  <ul>
+                      <li>Make: {{.Params.makes}}</li>
+                      <li>Series: {{.Params.series}}</li>
+                      <li>Subseries: {{.Params.subseries}}</li>
+                      <li>Platform: {{.Params.platform}}</li>
+                      <li>Year: {{.Params.years}}</li>
+                  </ul>
+                  <a href="{{.Permalink}}" class="ProductBorderButton">More Info</a>
+                </div>
+              </div>
             </div>
-            <div class="productDesc">
-              <a href="#">BMW  5 series | Service &amp; repair manual |E60 (saloon) E61(wagon) | 2003 -2010 </a>
-              <ul>
-                  <li>Make: BMW</li>
-                  <li>Series: 5-Series</li>
-                  <li>Subseries: ---</li>
-                  <li>Platform: E60 (saloon) E61 (wagon)</li>
-                  <li>Year: 2003 -2010 </li>
-              </ul>
-              <a href="#" class="ProductBorderButton">More Info</a>
-            </div>
-          </div>
-        </div>
-        <div class="pure-u-1 pure-u-md-1-3">
-          <div class="productBox">
-            <div class="productImage">
-              <img src="{{$.Site.BaseURL}}img/103003.jpg" alt="">
-            </div>
-            <div class="productDesc">
-              <a href="#">BMW  5 series | Service &amp; repair manual |E60 (saloon) E61(wagon) | 2003 -2010 </a>
-              <ul>
-                  <li>Make: BMW</li>
-                  <li>Series: 5-Series</li>
-                  <li>Subseries: ---</li>
-                  <li>Platform: E60 (saloon) E61 (wagon)</li>
-                  <li>Year: 2003 -2010 </li>
-              </ul>
-              <a href="#" class="ProductBorderButton">More Info</a>
-            </div>
-          </div>
-        </div>
-        <div class="pure-u-1 pure-u-md-1-3">
-          <div class="productBox">
-            <div class="productImage">
-              <img src="{{$.Site.BaseURL}}img/103003.jpg" alt="">
-            </div>
-            <div class="productDesc">
-              <a href="#">BMW  5 series | Service &amp; repair manual |E60 (saloon) E61(wagon) | 2003 -2010 </a>
-              <ul>
-                  <li>Make: BMW</li>
-                  <li>Series: 5-Series</li>
-                  <li>Subseries: ---</li>
-                  <li>Platform: E60 (saloon) E61 (wagon)</li>
-                  <li>Year: 2003 -2010 </li>
-              </ul>
-              <a href="#" class="ProductBorderButton">More Info</a>
-            </div>
-          </div>
-        </div>
-        <div class="pure-u-1 pure-u-md-1-3">
-          <div class="productBox">
-            <div class="productImage">
-              <img src="{{$.Site.BaseURL}}img/103003.jpg" alt="">
-            </div>
-            <div class="productDesc">
-              <a href="#">BMW  5 series | Service &amp; repair manual |E60 (saloon) E61(wagon) | 2003 -2010 </a>
-              <ul>
-                  <li>Make: BMW</li>
-                  <li>Series: 5-Series</li>
-                  <li>Subseries: ---</li>
-                  <li>Platform: E60 (saloon) E61 (wagon)</li>
-                  <li>Year: 2003 -2010 </li>
-              </ul>
-              <a href="#" class="ProductBorderButton">More Info</a>
-            </div>
-          </div>
-        </div>
+          {{end}}
+        {{end}}
     </div>
   </div>
 </div>
