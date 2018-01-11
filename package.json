@@ -1,0 +1,22 @@
+{
+  "name": "cml-new",
+  "version": "1.0.0",
+  "description": "\"Develop By Milan Patel\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digspinat/cml-new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digspinat/cml-new/issues"
+  },
+  "homepage": "https://github.com/digspinat/cml-new#readme",
+  "devDependencies": {
+    "datocms-client": "^0.3.41"
+  }
+}

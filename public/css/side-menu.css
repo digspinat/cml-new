@@ -1,8 +1,54 @@
 body {
     color: #777;
+    /*height: 100%;*/
 }
+/*Product CSS*/
+.productBox{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.productImage{
+  text-align: center;
+  padding: 8px;
+}
+.productImage img {
+  height: 266px;
+  width: 200px;
+  margin: 0 auto;
+}
+.productDesc{
+  color: black;
+  padding-top: 10px;
+  padding-left: 67px;
+  padding-right: 44px;
+  position: relative;
+}
+.productDesc ul{
+  margin-left: -23px;
+}
+.ProductBorderButton{
+  background-color: white;
+  color: #000;
+  border: 2px solid #3b8bba;
+  display: inline;
+  padding: 10px;
+}
+/*End Product CSS*/
 .subMenuItem a {
   color: black;
+}
+.main{
+  width: 100%;
+}
+.leftAlgolia{
+  float: left;
+  width: 19%;
+  padding: 4px;
+}
+.rightProduct{
+  float: right;
+  width: 79%;
+  padding: 4px;
 }
 .subMenuItem a:visited {
   color: black;
@@ -12,12 +58,12 @@ body {
   background-color: #0085da;
 }
 .footerLayout{
-  background: #181d1e;
+  background-color: #181d1e;
   color: white;
-  padding: 20px;
 }
 .mainContentLayout{
-  min-height: 60vh;
+  min-height: 70vh;
+  overflow: auto;
 }
 .MainHeaderLayout{
   background-color: #f9fafc;
@@ -31,13 +77,14 @@ body {
   position: fixed;
   width: 100%;
   top: 100px;
+  z-index: 1;
 }
 .mainMenu{
   position: fixed;
   width: 100%;
   background-color: #7a8690;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 .pure-menu-heading{
   margin: 0;
@@ -69,14 +116,13 @@ body {
 }
 .contentLayout{
   max-width: 1266px;
-  min-height: 60vh;
   background-color: white;
   margin: 0 auto;
   margin-top: 149px;
 }
 .pure-img-responsive {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 .mainMenuLayout {
   margin: 0 auto;
@@ -96,14 +142,14 @@ body {
   background-color: black;
 }
 .custom-wrapper {
-    margin-bottom: 1em;
-    -webkit-font-smoothing: antialiased;
-    height: 2.2em;
-    overflow: hidden;
-    -webkit-transition: height 0.5s;
-    -moz-transition: height 0.5s;
-    -ms-transition: height 0.5s;
-    transition: height 0.5s;
+  margin-bottom: 1em;
+  -webkit-font-smoothing: antialiased;
+  height: 2.2em;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  transition: height 0.5s;
 }
 .custom-wrapper.open {
     height: 8em;
@@ -151,7 +197,24 @@ body {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-
+@media (max-width: 320px) {
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 107px;
+    padding-right: 90px;
+    position: relative;
+  }
+}
+@media screen and (max-width: 376px) and (min-width: 374px) {
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 107px;
+    padding-right: 90px;
+    position: relative;
+  }
+}
 @media (max-width: 47.999em) {
     .custom-menu-3 {
         text-align: left;
@@ -168,45 +231,83 @@ body {
     .subChangeLayout{
       background-color: #e1e9ee;
     }
+    .leftAlgolia{
+      clear: both;
+      width: 100%;
+      padding: 0;
+    }
+    .rightProduct{
+      clear: both;
+      width: 100%;
+      padding: 0;
+    }
+    .productDesc{
+      color: black;
+      padding-top: 10px;
+      padding-left: 107px;
+      padding-right: 90px;
+      position: relative;
+    }
 }
 @media screen and (max-width: 961px) and (min-width: 959px) {
   .contentLayout{
     max-width: 800px;
-    min-height: 60vh;
     background-color: white;
     margin: 0 auto;
     margin-top: 149px;
   }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 44px;
+    position: relative;
+  }
 }
-/*@media (max-width: 960px) {
-
-}*/
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
   .contentLayout{
     max-width: 854px;
-    min-height: 60vh;
     background-color: white;
     margin: 0 auto;
     margin-top: 149px;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 44px;
+    position: relative;
   }
 }
 
 @media screen and (max-width: 1365px) and (min-width: 1280px) {
   .contentLayout{
     max-width: 1066px;
-    min-height: 60vh;
     background-color: white;
     margin: 0 auto;
     margin-top: 149px;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 44px;
+    position: relative;
   }
 }
 
 @media screen and (max-width: 1377px) and (min-width: 1366px) {
   .contentLayout{
     max-width: 1138px;
-    min-height: 60vh;
     background-color: white;
     margin: 0 auto;
     margin-top: 149px;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 44px;
+    position: relative;
   }
 }
