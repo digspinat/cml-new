@@ -197,15 +197,6 @@ body {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-@media (max-width: 320px) {
-  .productDesc{
-    color: black;
-    padding-top: 10px;
-    padding-left: 107px;
-    padding-right: 90px;
-    position: relative;
-  }
-}
 @media screen and (max-width: 376px) and (min-width: 374px) {
   .productDesc{
     color: black;
