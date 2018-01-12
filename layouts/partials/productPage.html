@@ -5,19 +5,143 @@
         <div class="ImageArea">
           <img src="{{.Params.proimage}}" class="pure-img-responsive" alt="">
         </div>
-        <div class="SendowlArea">
+        <div class="SendowlArea" style="">
           <div class="CurrencyArea">
             <div class="Currency">
               <h4 class="productTitle"><span class="BlueText">Currency: </span>{{.Params.currency}}</h4>
             </div>
             <div class="Rating">
               <h4 class="productTitle"><span class="BlueText">Over all Rating: </span><div class="star-ratings-css">
-  <div class="star-ratings-css-top" style="width: {{.Params.overallrate}}%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-  <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-</div></h4>
+                <div class="star-ratings-css-top" style="width: {{.Params.overallrate}}%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              </div></h4>
             </div>
+          </div>
+          <div class="sendOwl" style="margin-top:70px;">
+            {{.Params.sendowl | safeHTML }}
+          </div>
+          <div class="addToCart">
+            {{.Params.addtocart | markdownify}}
+          </div>
+          <div class="carSpecification">
+            <h3 class="BlueText">Car Specification: </h3>
+            <table>
+              <tr>
+                <th>Make:</th>
+                <th>{{.Params.makes}}</th>
+              </tr>
+              <tr>
+                <th>Series:</th>
+                <th>{{.Params.series}}</th>
+              </tr>
+              <tr>
+                <th>Sub Series:</th>
+                <th>{{.Params.subseries}}</th>
+              </tr>
+              <tr>
+                <th>Platform:</th>
+                <th>{{.Params.platform}}</th>
+              </tr>
+              <tr>
+                <th>Year:</th>
+                <th>{{.Params.years}}</th>
+              </tr>
+              <tr>
+                <th>Bodytype:</th>
+                <th>{{.Params.bodytype}}</th>
+              </tr>
+              <tr>
+                <th>Fueltype:</th>
+                <th>{{.Params.fueltype}}</th>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
   </div>
 </div>
+<div class="ManArea" style="margin-top:20px;">
+  <div class="productLayout">
+    <div class="MannProp">
+      <div class="ManualArea">
+        <h3 class="BlueText">Manual Specification</h3>
+        <table>
+          <tr>
+            <th>Manual Type:</th>
+            <th>{{.Params.mstype}}</th>
+          </tr>
+          <tr>
+            <th>No. of Pages:</th>
+            <th>{{.Params.mspages}}</th>
+          </tr>
+          <tr>
+            <th>File Size:</th>
+            <th>{{.Params.msfilesize}}</th>
+          </tr>
+          <tr>
+            <th>Format:</th>
+            <th>{{.Params.msformat}}</th>
+          </tr>
+          <tr>
+            <th>Language:</th>
+            <th>{{.Params.mslanguage}}</th>
+          </tr>
+          <tr>
+            <th>Suitable for:</th>
+            <th>{{.Params.mssuitable}}</th>
+          </tr>
+        </table>
+      </div>
+      <div class="PropsCons">
+        <h3 class="BlueText">Props and Cons</h3>
+        <div class="Props">
+          {{.Params.manualporp | markdownify}}
+        </div>
+        <div class="Cons">
+          {{.Params.manualcons | markdownify}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ManArea" style="margin-top:20px;">
+  <div class="productLayout">
+    <h3 class="BlueText">Description</h3>
+    <div class="ManualDescription">
+      {{.Params.manualdescription | markdownify}}
+    </div>
+    <div class="ModelsEngCover">
+      {{.Params.manualengcover | markdownify}}
+    </div>
+    <div class="ModelsEngCover">
+      {{.Params.manualcover | markdownify}}
+    </div>
+  </div>
+</div>
+<div class="ManArea" style="margin-top:20px;">
+  <div class="productLayout">
+    <div class="MannProp">
+      <div class="ManualArea">
+        <h3 class="BlueText">Manual Previews</h3>
+        <div style="margin-left:-12px;">
+          {{ .Content | markdownify }}
+        </div>
+      </div>
+      <div class="PropsCons">
+        <h3 style="margin-left:8px;" class="BlueText">Manual Reviews</h3>
+        {{range .Params.manualreview}}
+          <div class="ReviewBox">
+            <p style="float:left;"><strong>{{.reviewItemNickname}}</strong></p>
+            <p style="float:right;"><strong>Rating:</strong>{{.reviewItemRating}}</p>
+            <p style="clear:both;"><strong>Title:</strong>{{.reviewItemTitle}}</p>
+            <p><strong>Message:</strong>{{.reviewItemDescr | markdownify}}</p>
+          </div>
+        {{end}}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ManArea" style="margin-top:20px;text-align:center;">
+  {{.Params.sendowl | safeHTML }}
+</div>
+<br><br>

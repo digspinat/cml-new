@@ -35,6 +35,154 @@ body {
 .SendowlArea{
   width: 50%;
   float: right;
+  margin-top:-23px;
+}
+.Rating h4 {
+  margin-top: 16px;
+}
+.addToCart li{
+  list-style: none;
+  margin: 0.1em;
+  margin-left: 1em;
+}
+.addToCart li:before{
+  font-family: 'FontAwesome';
+  content: '\f058';
+  float: left;
+  color: #0085da;
+  margin-left: -1.5em;
+}
+.addToCart ul li{
+  color: black;
+}
+.addToCart ul{
+  margin-left: -32px;
+  margin-top: 25px;
+}
+.carSpecification {
+  margin-top: 25px;
+}
+.carSpecification table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 70%;
+  border: 1px solid #ddd;
+  color: black;
+  color: black;
+  font-size: 15px;
+}
+.carSpecification th, td {
+    text-align: left;
+    padding: 8px;
+}
+.carSpecification tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+.ManualArea table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+  border: 1px solid #ddd;
+  color: black;
+  font-size: 15px;
+}
+.ManualArea th, td {
+    text-align: left;
+    padding: 8px;
+}
+.ManualArea tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+.MannProp{
+  width: 100%;
+}
+.ManualArea{
+  width: 50%;
+  float: left;
+}
+.PropsCons{
+  width: 50%;
+  float: right;
+}
+.Props {
+  color: black;
+}
+.Props ul {
+  margin-left: -30px;
+}
+.Props li{
+  list-style: none;
+  margin: 0.1em;
+  margin-left: 1em;
+}
+.Props li:before{
+  font-family: 'FontAwesome';
+  content: '\f058';
+  float: left;
+  color: green;
+  margin-left: -1.5em;
+}
+.Cons {
+  color: black;
+}
+.Cons ul {
+  margin-left: -30px;
+}
+.Cons li{
+  list-style: none;
+  margin: 0.1em;
+  margin-left: 1em;
+}
+.Cons li:before{
+  font-family: 'FontAwesome';
+  content: '\f00d';
+  float: left;
+  color: red;
+  margin-left: -1.5em;
+}
+.ManualDescription h1{
+  color: black;
+}
+.ManualDescription h2{
+  color: black;
+}
+.ManualDescription h3{
+  color: black;
+}
+.ManualDescription h4{
+  color: black;
+}
+.ManualDescription h5{
+  color: black;
+}
+.ManualDescription h6{
+  color: black;
+}
+.ManualDescription p {
+  color: black;
+}
+.ManualDescription ul {
+  color: black;
+}
+.ModelsEngCover{
+  color: black;
+}
+.ModelsEngCover table{
+  border-collapse: collapse;
+  width: 100%;
+}
+.ModelsEngCover td, th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 10px;
+}
+.ReviewBox{
+  margin: 8px;
+  padding: 8px;
+  color: black;
+  font-size: 14px;
+  border: 1px solid lightgray;
+  box-shadow: 5px 10px lightgray;
 }
 /*End Product Page Layout CSS*/
 /*Product CSS*/
@@ -101,6 +249,9 @@ body {
 }
 .mainContentLayout{
   min-height: 70vh;
+  overflow: auto;
+}
+.ManArea{
   overflow: auto;
 }
 .MainHeaderLayout{
@@ -240,7 +391,7 @@ body {
 .star-ratings-css {
   unicode-bidi: bidi-override;
   color: #c5c5c5;
-  font-size: 25px;
+  font-size: 22px;
   height: 31px;
   width: 100px;
   margin: 0 auto;
@@ -291,6 +442,9 @@ body {
     padding-right: 90px;
     position: relative;
   }
+  .carSpecification table{
+    width: 100%;
+  }
 }
 @media (max-width: 47.999em) {
     .custom-menu-3 {
@@ -318,6 +472,16 @@ body {
       width: 100%;
       padding: 0;
     }
+    .ManualArea{
+      clear: both;
+      width: 100%;
+      padding: 0;
+    }
+    .PropsCons{
+      clear: both;
+      width: 100%;
+      padding: 0;
+    }
     .productDesc{
       color: black;
       padding-top: 10px;
@@ -337,6 +501,7 @@ body {
       clear: both;
       width: 100%;
       padding: 0;
+      margin-top: 20px;
     }
     .Currency{
       clear: both;
@@ -347,6 +512,18 @@ body {
       clear: both;
       width: 100%;
       padding: 0;
+    }
+    .carSpecification table{
+      width: 100%;
+    }
+    .ManualArea table{
+      width: 100%;
+    }
+    .Props ul {
+      margin-left: -30px;
+    }
+    .Cons ul {
+      margin-left: -30px;
     }
 }
 @media screen and (max-width: 961px) and (min-width: 959px) {
@@ -365,6 +542,9 @@ body {
   }
   .productLayout{
     padding: 8px;
+  }
+  .carSpecification table{
+    width: 100%;
   }
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px) {

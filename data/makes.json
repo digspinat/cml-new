@@ -6,5 +6,9 @@
   {
     "make": "BMW",
     "url": "bmw"
+  },
+  {
+    "make": "Mercedes",
+    "url": "mercedes"
   }
 ]

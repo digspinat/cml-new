@@ -22,12 +22,12 @@
     "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103005.jpg"
   },
   {
-    "make": "Audi",
+    "make": "BMW",
     "series": "--",
-    "platform": "B8 - 8K",
-    "years": "2008-2014",
-    "bodytype": "Saloon & Wagon",
-    "fueltype": "Petrol & diesel",
+    "platform": "Mk2 (Type 8J)",
+    "years": "2006-2014",
+    "bodytype": "Roadster + Coupe ",
+    "fueltype": "Diesel",
     "title": "Audi TT (MK2) Workshop manual (8J) | 2006 - 2014 Roadster + Coupe ",
     "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103004.jpg",
     "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103004.jpg"
@@ -35,12 +35,34 @@
   {
     "make": "BMW",
     "series": "--",
-    "platform": "Mk2 (Type 8J)",
-    "years": "2006-2014",
-    "bodytype": "Roadster + Coupe ",
-    "fueltype": "Diesel",
+    "platform": "E60 (saloon) E61 (wagon)",
+    "years": "2003 - 2010",
+    "bodytype": "Salon & wagon",
+    "fueltype": "Petrol & diesel",
     "title": " BMW  5 series | Service & repair manual |E60 (saloon) E61(wagon) | 2003 -2010 ",
     "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103003.jpg",
     "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103003.jpg"
+  },
+  {
+    "make": "BMW",
+    "series": "X5",
+    "platform": "E70",
+    "years": "2006 - 2013",
+    "bodytype": "SUV",
+    "fueltype": "Petrol & diesel",
+    "title": "BMW X5 (E70) | Service & repair manual | 2006 - 2013",
+    "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103001.jpg",
+    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103001.jpg"
+  },
+  {
+    "make": "Mercedes",
+    "series": "ML",
+    "platform": "W163",
+    "years": "1997 - 2005",
+    "bodytype": "SUV",
+    "fueltype": "Petrol & diesel",
+    "title": "Mercedes Benz (M-Class) ML (W163) | Service  & repair manual |1997 - 2005 | Petrol & diesel",
+    "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103002.jpg",
+    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103002.jpg"
   }
 ]

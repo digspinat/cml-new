@@ -28,6 +28,10 @@
   </url>
   
   <url>
+    <loc>https://cml-new.netlify.com/103001/</loc>
+  </url>
+  
+  <url>
     <loc>https://cml-new.netlify.com/makes/bmw/</loc>
     <priority>0</priority>
   </url>
@@ -45,6 +49,15 @@
   <url>
     <loc>https://cml-new.netlify.com/manual/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cml-new.netlify.com/makes/mercedes/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://cml-new.netlify.com/103002/</loc>
   </url>
   
   <url>
