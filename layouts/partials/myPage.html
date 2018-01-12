@@ -1,0 +1,38 @@
+<input type="hidden" value="{{.Title}}" id="PageTitle">
+<div class="mainContentLayout">
+  <div class="productLayout">
+    {{if eq .Title "Contact"}}
+      <form action="{{$.Site.BaseURL}}/contact/" method="POST" class="pure-form pure-form-stacked">
+        <fieldset>
+            <legend>Contact</legend>
+            <div class="pure-g">
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <label for="first-name">Your name</label>
+                    <input name="Name" id="first-name" placeholder="Enter your name" class="pure-u-23-24" type="text" required>
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <label for="last-name">Your email</label>
+                    <input id="last-name" name="Email" placeholder="Enter your email" class="pure-u-23-24" type="email" required>
+                </div>
+
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <label for="last-name">Message</label>
+                    <textarea class="pure-u-23-24" name="Message" placeholder="Enter your message" rows="8" cols="80" required></textarea>
+                </div>
+            </div>
+            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+        </fieldset>
+      </form>
+    {{end}}
+    <div class="PageLayout">
+      {{ .Content | markdownify }}
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    var PageTitle = $("#PageTitle").val();
+    $("#HeaderTitle").text(PageTitle);
+  });
+</script>

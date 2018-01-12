@@ -1,5 +1,5 @@
 module.exports = (dato, root, i18n) => {
-  console.log(dato.manuals);
+  // console.log(dato.pages);
   root.directory("content/manual", (dir) => {
     dato.manuals.forEach((manuals) => {
         dir.createPost(`${manuals.url}.md`, "yaml", {
@@ -78,4 +78,18 @@ module.exports = (dato, root, i18n) => {
   });
   root.createDataFile(`data/data.json`, 'json', myall)
   root.createDataFile(`data/makes.json`, 'json', mybrand)
+
+  root.directory("content/", (dir) => {
+    dato.pages.forEach((Page, i) => {
+        dir.createPost(`${Page.slug}.md`, "yaml", {
+          frontmatter: {
+            title: Page.pgeTitle,
+            type: "mypage",
+            description: Page.pageDescription,
+            weight: i
+          },
+          content: Page.pageDescription
+        });
+      });
+  });
 }

@@ -3,5 +3,8 @@
   {{if eq .Type "manual"}}
     {{partial "productPage.html" .}}
   {{end}}
+  {{if eq .Type "mypage"}}
+    {{partial "myPage.html" .}}
+  {{end}}
 
 {{ partial "footer.html" . }}

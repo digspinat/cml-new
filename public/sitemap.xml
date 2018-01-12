@@ -3,11 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cml-new.netlify.com/faq/</loc>
+  </url>
+  
+  <url>
+    <loc>https://cml-new.netlify.com/contact/</loc>
+  </url>
+  
+  <url>
     <loc>https://cml-new.netlify.com/103003/</loc>
   </url>
   
   <url>
-    <loc>https://cml-new.netlify.com/aboutus/</loc>
+    <loc>https://cml-new.netlify.com/about-us/</loc>
   </url>
   
   <url>
