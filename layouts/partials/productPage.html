@@ -17,7 +17,13 @@
               </div></h4>
             </div>
           </div>
-          <div class="sendOwl" style="margin-top:70px;">
+          <div class="CurrencyArea">
+            <div class="Currency" style="width:100%;margin-top:-27px;">
+              <h4 class="productTitle" ><span class="BlueText">Price: </span>{{.Params.sendowlprice}}</h4>
+              <h4 class="productTitle"><span class="BlueText">Manual Status: </span>{{.Params.manualstatus}}</h4>
+            </div>
+          </div>
+          <div class="sendOwl" style="margin-top:160px;">
             {{.Params.sendowl | safeHTML }}
           </div>
           <div class="addToCart">
@@ -48,7 +54,9 @@
               </tr>
               <tr>
                 <th>Bodytype:</th>
-                <th>{{.Params.bodytype}}</th>
+                <th>{{range .Params.carspecs.carspecbodytype}}
+                  {{ .partialbodytypename }},
+                {{end}}</th>
               </tr>
               <tr>
                 <th>Fueltype:</th>

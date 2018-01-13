@@ -1,370 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.30.2" />
-
-  <title>Carmanuls Lib</title>
-
-  
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
-
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
-  <!--<![endif]-->
-
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="/css/side-menu.css">
-  <!--<![endif]-->
-
-  <link rel="stylesheet" href="/css/blackburn.css">
-
-  
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-  
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-
-  
-  
-  <link rel="alternate" type="application/rss+xml" title="Carmanuls Lib" href="https://cml-new.netlify.com/index.xml" />
-  
-
-  
-  
-  
-  
-  
-  
-
-  <link rel="shortcut icon" href="https://cml-new.netlify.com/img/favicon.ico" type="image/x-icon" />
-
-  
-  
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="/js/algolia.js"></script>
-</head>
-
-
-<body>
-  <div class="mainLayout">
-    <div class="pure-g mainMenu">
-        <div class="mainMenuLayout pure-u-20-24">
-          <div class="custom-wrapper pure-g" id="menu">
-    <div class="pure-u-1 pure-u-md-1-3">
-        <div class="custom-brand">
-            <a href="https://cml-new.netlify.com/" class="pure-menu-heading">Carmanuls Lib</a>
-            <a href="#" class="custom-toggle" id="toggle" ><s class="bar"></s><s class="bar"></s></a>
-        </div>
-    </div>
-    <div class="pure-u-1 pure-u-md-1-3">
-    </div>
-    <div class="pure-u-1 pure-u-md-1-3">
-        <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform">
-            <ul class="pure-menu-list myMainMenu">
-              
-                
-                  <li class="pure-menu-item"><a href="/" class="">Home</a></li>
-                
-              
-
-              
-                
-                  <li class="pure-menu-item"><a href="https://cml-new.netlify.com/faq/" class="">FAQ</a></li>
-                
-              
-                
-                  <li class="pure-menu-item"><a href="https://cml-new.netlify.com/contact/" class="">Contact</a></li>
-                
-              
-                
-              
-                
-                  <li class="pure-menu-item"><a href="https://cml-new.netlify.com/about-us/" class="">About us</a></li>
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-                
-              
-            </ul>
-        </div>
-    </div>
-</div>
-
-        </div>
-    </div>
-    <div class="pure-g subMenu">
-        <div class="pure-u-2-24 subChangeLayout" style=""></div>
-        <div class="pure-u-20-24">
-            <div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
-    <ul class="pure-menu-list">
-      
-      
-        <li class="pure-menu-item subMenuItem"><a href="/makes/audi" class="pure-menu-link myElement">Audi</a></li>
-      
-        <li class="pure-menu-item subMenuItem"><a href="/makes/bmw" class="pure-menu-link myElement">BMW</a></li>
-      
-        <li class="pure-menu-item subMenuItem"><a href="/makes/mercedes" class="pure-menu-link myElement">Mercedes</a></li>
-      
-    </ul>
-</div>
-
-        </div>
-        <div class="pure-u-2-24 subChangeLayout"></div>
-    </div>
-    <div class="contentLayout">
-      <div class="MainHeaderLayout">
-        <h2 id="HeaderTitle">
-          Carmanuls Lib
-        </h2>
-      </div>
-
-  <div class="mainContentLayout">
-    <div class="main">
-  <div class="leftAlgolia">
-    <div class="FilterArea">
-	<header>
-		<h5 class="headerFilter">Filter</h5>
-		<div class="pure-g serachBox">
-			<div class="pure-u-1">
-				<form class="pure-form">
-					<input class="pure-input-1 pure-input-rounded" type="text" id="searchInput" placeholder="Search by Title" >
-				</form>
-			</div>
-		</div>
-	</header>
-	<div class="Brand">
-		<h5 class="FilterTitle">Brand</h5>
-		<div id="myBrand">
-
-		</div>
-	</div>
-	<div class="Brand">
-		<h5 class="FilterTitle">Series</h5>
-		<div id="mySeries">
-
-		</div>
-	</div>
-	<div class="Brand">
-		<h5 class="FilterTitle">Sub Series</h5>
-		<div id="mySubseries">
-
-		</div>
-	</div>
-	<div class="Brand">
-		<h5 class="FilterTitle">Years</h5>
-		<div id="myYears">
-
-		</div>
-	</div>
-	<div class="Brand">
-		<h5 class="FilterTitle">Platform</h5>
-		<div id="myPlatform">
-
-		</div>
-	</div>
-</div>
-
-  </div>
-  <div class="rightProduct">
-    <div class="pure-g" id="productData">
-        
-          
-        
-          
-        
-          
-            <div class="pure-u-1 pure-u-md-1-3">
-              <div class="productBox">
-                <div class="productImage">
-                  <a href="https://cml-new.netlify.com/103003/"><img src="https://cmlc.imgix.net/Images/covers/cml/c/103003.jpg" alt=""></a>
-                </div>
-                <div class="productDesc">
-                  <a href="https://cml-new.netlify.com/103003/">USD 103003 | BMW  5 series | Service &amp; repair manual |E60 (saloon) E61(wagon) | 2003 -2010</a>
-                  <ul>
-                      <li>Make: BMW</li>
-                      <li>Series: 5 Serie</li>
-                      <li>Subseries: --</li>
-                      <li>Platform: E60 (saloon) E61 (wagon)</li>
-                      <li>Year: 2003 - 2010</li>
-                  </ul>
-                  <a href="https://cml-new.netlify.com/103003/" class="ProductBorderButton">More Info</a>
-                </div>
-              </div>
-            </div>
-          
-        
-          
-        
-          
-            <div class="pure-u-1 pure-u-md-1-3">
-              <div class="productBox">
-                <div class="productImage">
-                  <a href="https://cml-new.netlify.com/103006/"><img src="https://cmlc.imgix.net/Images/covers/cml/c/103006.jpg" alt=""></a>
-                </div>
-                <div class="productDesc">
-                  <a href="https://cml-new.netlify.com/103006/">USD 103006 | Audi A4 B8 - 8K | Service &amp; repair manual | 2008 - 2014 | </a>
-                  <ul>
-                      <li>Make: Audi</li>
-                      <li>Series: A4</li>
-                      <li>Subseries: --</li>
-                      <li>Platform: B8 - 8K</li>
-                      <li>Year: 2008-2014</li>
-                  </ul>
-                  <a href="https://cml-new.netlify.com/103006/" class="ProductBorderButton">More Info</a>
-                </div>
-              </div>
-            </div>
-          
-        
-          
-            <div class="pure-u-1 pure-u-md-1-3">
-              <div class="productBox">
-                <div class="productImage">
-                  <a href="https://cml-new.netlify.com/103005/"><img src="https://cmlc.imgix.net/Images/covers/cml/c/103005.jpg" alt=""></a>
-                </div>
-                <div class="productDesc">
-                  <a href="https://cml-new.netlify.com/103005/">USD 103005 | Audi Q5 (8R) |Repair &amp; service manual | 2009 - 2017 </a>
-                  <ul>
-                      <li>Make: Audi</li>
-                      <li>Series: Q5</li>
-                      <li>Subseries: --</li>
-                      <li>Platform: B8 (Typ 8R)</li>
-                      <li>Year: 2009-2017</li>
-                  </ul>
-                  <a href="https://cml-new.netlify.com/103005/" class="ProductBorderButton">More Info</a>
-                </div>
-              </div>
-            </div>
-          
-        
-          
-            <div class="pure-u-1 pure-u-md-1-3">
-              <div class="productBox">
-                <div class="productImage">
-                  <a href="https://cml-new.netlify.com/103004/"><img src="https://cmlc.imgix.net/Images/covers/cml/c/103004.jpg" alt=""></a>
-                </div>
-                <div class="productDesc">
-                  <a href="https://cml-new.netlify.com/103004/">USD 103004 | Audi TT (MK2) Workshop manual (8J) | 2006 - 2014 Roadster &#43; Coupe </a>
-                  <ul>
-                      <li>Make: BMW</li>
-                      <li>Series: TT</li>
-                      <li>Subseries: --</li>
-                      <li>Platform: Mk2 (Type 8J)</li>
-                      <li>Year: 2006-2014</li>
-                  </ul>
-                  <a href="https://cml-new.netlify.com/103004/" class="ProductBorderButton">More Info</a>
-                </div>
-              </div>
-            </div>
-          
-        
-          
-            <div class="pure-u-1 pure-u-md-1-3">
-              <div class="productBox">
-                <div class="productImage">
-                  <a href="https://cml-new.netlify.com/103007/"><img src="https://cmlc.imgix.net/Images/covers/cml/c/103007.jpg" alt=""></a>
-                </div>
-                <div class="productDesc">
-                  <a href="https://cml-new.netlify.com/103007/">USD 103007 | BMW E46 (3 Series) | Service &amp; repair manual | 1999 -2005</a>
-                  <ul>
-                      <li>Make: BMW</li>
-                      <li>Series: 3 Serie</li>
-                      <li>Subseries: --</li>
-                      <li>Platform: E46</li>
-                      <li>Year: 1999 -2005</li>
-                  </ul>
-                  <a href="https://cml-new.netlify.com/103007/" class="ProductBorderButton">More Info</a>
-                </div>
-              </div>
-            </div>
-          
-        
-          
-            <div class="pure-u-1 pure-u-md-1-3">
-              <div class="productBox">
-                <div class="productImage">
-                  <a href="https://cml-new.netlify.com/103001/"><img src="https://cmlc.imgix.net/Images/covers/cml/c/103001.jpg" alt=""></a>
-                </div>
-                <div class="productDesc">
-                  <a href="https://cml-new.netlify.com/103001/">USD 103001 | BMW X5 (E70) | Service &amp; repair manual | 2006 - 2013</a>
-                  <ul>
-                      <li>Make: BMW</li>
-                      <li>Series: X-Serie</li>
-                      <li>Subseries: X5</li>
-                      <li>Platform: E70</li>
-                      <li>Year: 2006 - 2013</li>
-                  </ul>
-                  <a href="https://cml-new.netlify.com/103001/" class="ProductBorderButton">More Info</a>
-                </div>
-              </div>
-            </div>
-          
-        
-          
-            <div class="pure-u-1 pure-u-md-1-3">
-              <div class="productBox">
-                <div class="productImage">
-                  <a href="https://cml-new.netlify.com/103002/"><img src="https://cmlc.imgix.net/Images/covers/cml/c/103002.jpg" alt=""></a>
-                </div>
-                <div class="productDesc">
-                  <a href="https://cml-new.netlify.com/103002/">USD 103002 | Mercedes Benz (M-Class) ML (W163) | Service  &amp; repair manual |1997 - 2005 | Petrol &amp; diesel</a>
-                  <ul>
-                      <li>Make: Mercedes</li>
-                      <li>Series: M-Class xxx</li>
-                      <li>Subseries: ML</li>
-                      <li>Platform: W163</li>
-                      <li>Year: 1997 - 2005 xx</li>
-                  </ul>
-                  <a href="https://cml-new.netlify.com/103002/" class="ProductBorderButton">More Info</a>
-                </div>
-              </div>
-            </div>
-          
-        
-    </div>
-    <div class="myPagination">
-      <div class="pagination" id="MyPaginationHere">
-
-      </div>
-    </div>
-  </div>
-</div>
 <script type="text/javascript">
   var client = algoliasearch("YZO8M6AZ6J", "74516bbcef74ec917e2acbcd0df2df0f");
   var index = client.initIndex('cml-new');
@@ -469,7 +102,7 @@
       });
       $("#myPlatform").html(PlatformText);
 
-      
+      // console.log(res);
       var pagination = "<a id='PreviousPage' href='#'>&laquo;</a>"+
       "<a id='currentPage' data-id='0'>Page: 1 Of "+res['nbPages']+"</a>"+
       "<a id='NextPage' href='#'>&raquo;</a>";
@@ -603,10 +236,10 @@ $(document).on('click','.mySearch',function(){
         prodcuct += "<div class='pure-u-1 pure-u-md-1-3'>"+
           "<div class='productBox'>"+
             "<div class='productImage'>"+
-              "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
+              "<a href='{{$.Site.BaseURL}}"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
             "</div>"+
             "<div class='productDesc'>"+
-              "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"'>"+val['manualname']+"</a>"+
+              "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a>"+
               "<ul>"+
                   "<li>Make: "+val['make']+"</li>"+
                   "<li>Series: "+val['series']+"</li>"+
@@ -614,7 +247,7 @@ $(document).on('click','.mySearch',function(){
                   "<li>Platform: "+val['platform']+"</li>"+
                   "<li>Year: "+val['years']+"</li>"+
               "</ul>"+
-              "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
+              "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
             "</div>"+
           "</div>"+
         "</div>";
@@ -752,10 +385,10 @@ $(document).on('click','.mySearch',function(){
         prodcuct += "<div class='pure-u-1 pure-u-md-1-3'>"+
           "<div class='productBox'>"+
             "<div class='productImage'>"+
-              "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
+              "<a href='{{$.Site.BaseURL}}"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
             "</div>"+
             "<div class='productDesc'>"+
-              "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"'>"+val['manualname']+"</a>"+
+              "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a>"+
               "<ul>"+
                   "<li>Make: "+val['make']+"</li>"+
                   "<li>Series: "+val['series']+"</li>"+
@@ -763,7 +396,7 @@ $(document).on('click','.mySearch',function(){
                   "<li>Platform: "+val['platform']+"</li>"+
                   "<li>Year: "+val['years']+"</li>"+
               "</ul>"+
-              "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
+              "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
             "</div>"+
           "</div>"+
         "</div>";
@@ -910,10 +543,10 @@ $(document).on('click','#PreviousPage',function(){
           prodcuct += "<div class='pure-u-1 pure-u-md-1-3'>"+
             "<div class='productBox'>"+
               "<div class='productImage'>"+
-                "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
               "</div>"+
               "<div class='productDesc'>"+
-                "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"'>"+val['manualname']+"</a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a>"+
                 "<ul>"+
                     "<li>Make: "+val['make']+"</li>"+
                     "<li>Series: "+val['series']+"</li>"+
@@ -921,7 +554,7 @@ $(document).on('click','#PreviousPage',function(){
                     "<li>Platform: "+val['platform']+"</li>"+
                     "<li>Year: "+val['years']+"</li>"+
                 "</ul>"+
-                "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
               "</div>"+
             "</div>"+
           "</div>";
@@ -1070,10 +703,10 @@ $(document).on('click','#NextPage',function(){
           prodcuct += "<div class='pure-u-1 pure-u-md-1-3'>"+
             "<div class='productBox'>"+
               "<div class='productImage'>"+
-                "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
               "</div>"+
               "<div class='productDesc'>"+
-                "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"'>"+val['manualname']+"</a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a>"+
                 "<ul>"+
                     "<li>Make: "+val['make']+"</li>"+
                     "<li>Series: "+val['series']+"</li>"+
@@ -1081,7 +714,7 @@ $(document).on('click','#NextPage',function(){
                     "<li>Platform: "+val['platform']+"</li>"+
                     "<li>Year: "+val['years']+"</li>"+
                 "</ul>"+
-                "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
               "</div>"+
             "</div>"+
           "</div>";
@@ -1206,10 +839,10 @@ $(document).on('keyup', '#searchInput', function(){
           prodcuct += "<div class='pure-u-1 pure-u-md-1-3'>"+
             "<div class='productBox'>"+
               "<div class='productImage'>"+
-                "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
               "</div>"+
               "<div class='productDesc'>"+
-                "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"'>"+val['manualname']+"</a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a>"+
                 "<ul>"+
                     "<li>Make: "+val['make']+"</li>"+
                     "<li>Series: "+val['series']+"</li>"+
@@ -1217,7 +850,7 @@ $(document).on('keyup', '#searchInput', function(){
                     "<li>Platform: "+val['platform']+"</li>"+
                     "<li>Year: "+val['years']+"</li>"+
                 "</ul>"+
-                "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
               "</div>"+
             "</div>"+
           "</div>";
@@ -1342,10 +975,10 @@ $(document).on('keyup', '#searchInput', function(){
           prodcuct += "<div class='pure-u-1 pure-u-md-1-3'>"+
             "<div class='productBox'>"+
               "<div class='productImage'>"+
-                "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
               "</div>"+
               "<div class='productDesc'>"+
-                "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"'>"+val['manualname']+"</a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a>"+
                 "<ul>"+
                     "<li>Make: "+val['make']+"</li>"+
                     "<li>Series: "+val['series']+"</li>"+
@@ -1353,7 +986,7 @@ $(document).on('keyup', '#searchInput', function(){
                     "<li>Platform: "+val['platform']+"</li>"+
                     "<li>Year: "+val['years']+"</li>"+
                 "</ul>"+
-                "<a href='https:\/\/cml-new.netlify.com\/"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
               "</div>"+
             "</div>"+
           "</div>";
@@ -1368,25 +1001,3 @@ $(document).on('keyup', '#searchInput', function(){
   }
 });
 </script>
-
-
-  </div>
-      <div class="footerLayout">
-        <div class="pure-g" style="text-align:center;">
-            <div class="pure-u-1 pure-u-md-1-3">
-              <h4>Footer Layout 1</h4>
-            </div>
-            <div class="pure-u-1 pure-u-md-1-3">
-              <h4>Footer Layout 2</h4>
-            </div>
-            <div class="pure-u-1 pure-u-md-1-3">
-              <h4>Footer Layout 3</h4>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<script src="https://cml-new.netlify.com/js/ui.js"></script>
-</body>
-</html>
-

@@ -2,9 +2,106 @@ body {
     color: #777;
     /*height: 100%;*/
 }
+/*Filter CSS*/
+.FilterArea{
+  margin-left: 20px;
+  color: black;
+}
+.headerFilter{
+  color: #0085da;
+  font-size: 20px;
+}
+.FilterTitle{
+  font-size: 16px;
+  color: #0085da;
+}
+.FilterTitle{
+  font-size: 16px;
+  color: #0085da;
+}
+.myPagination{
+  text-align: center;
+}
+.pagination {
+    display: inline-block;
+}
+.serachBox{
+  margin-right: 20px;
+}
+#PreviousPage{
+  cursor: pointer;
+}
+#NextPage{
+  cursor: pointer;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+/*END Filter CSS*/
+
 /*Page CSS*/
 .PageLayout{
   color: black;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #ccc;
+}
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+    background-color: #0085da;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 /*END Page CSS*/
 /*Product Page Layout CSS*/
@@ -346,7 +443,7 @@ body {
   transition: height 0.5s;
 }
 .custom-wrapper.open {
-    height: 8em;
+    height: 13em;
 }
 .custom-menu-3 {
     text-align: right;

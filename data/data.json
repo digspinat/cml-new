@@ -1,68 +1,100 @@
 [
   {
     "make": "Audi",
-    "series": "--",
+    "series": "A4",
+    "subseries": "--",
     "platform": "B8 - 8K",
     "years": "2008-2014",
-    "bodytype": "Saloon & Wagon",
+    "bodytype": null,
     "fueltype": "Petrol & diesel",
     "title": "Audi A4 B8 - 8K | Service & repair manual | 2008 - 2014 | ",
     "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103006.jpg",
-    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103006.jpg"
+    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103006.jpg",
+    "url": "103006",
+    "manualname": "USD 103006 | Audi A4 B8 - 8K | Service & repair manual | 2008 - 2014 | "
   },
   {
     "make": "Audi",
-    "series": "--",
+    "series": "Q5",
+    "subseries": "--",
     "platform": "B8 (Typ 8R)",
     "years": "2009-2017",
-    "bodytype": "SUV",
+    "bodytype": null,
     "fueltype": "Petrol & diesel",
     "title": "Audi Q5 (8R) |Repair & service manual | 2009 - 2017 ",
     "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103005.jpg",
-    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103005.jpg"
+    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103005.jpg",
+    "url": "103005",
+    "manualname": "USD 103005 | Audi Q5 (8R) |Repair & service manual | 2009 - 2017 "
   },
   {
     "make": "BMW",
-    "series": "--",
+    "series": "TT",
+    "subseries": "--",
     "platform": "Mk2 (Type 8J)",
     "years": "2006-2014",
-    "bodytype": "Roadster + Coupe ",
+    "bodytype": null,
     "fueltype": "Diesel",
     "title": "Audi TT (MK2) Workshop manual (8J) | 2006 - 2014 Roadster + Coupe ",
     "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103004.jpg",
-    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103004.jpg"
+    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103004.jpg",
+    "url": "103004",
+    "manualname": "USD 103004 | Audi TT (MK2) Workshop manual (8J) | 2006 - 2014 Roadster + Coupe "
   },
   {
     "make": "BMW",
-    "series": "--",
+    "series": "5 Serie",
+    "subseries": "--",
     "platform": "E60 (saloon) E61 (wagon)",
     "years": "2003 - 2010",
-    "bodytype": "Salon & wagon",
+    "bodytype": null,
     "fueltype": "Petrol & diesel",
     "title": " BMW  5 series | Service & repair manual |E60 (saloon) E61(wagon) | 2003 -2010 ",
     "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103003.jpg",
-    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103003.jpg"
+    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103003.jpg",
+    "url": "103003",
+    "manualname": "USD 103003 | BMW  5 series | Service & repair manual |E60 (saloon) E61(wagon) | 2003 -2010"
   },
   {
     "make": "BMW",
-    "series": "X5",
+    "series": "X-Serie",
+    "subseries": "X5",
     "platform": "E70",
     "years": "2006 - 2013",
-    "bodytype": "SUV",
+    "bodytype": null,
     "fueltype": "Petrol & diesel",
     "title": "BMW X5 (E70) | Service & repair manual | 2006 - 2013",
     "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103001.jpg",
-    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103001.jpg"
+    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103001.jpg",
+    "url": "103001",
+    "manualname": "USD 103001 | BMW X5 (E70) | Service & repair manual | 2006 - 2013"
   },
   {
     "make": "Mercedes",
-    "series": "ML",
+    "series": "M-Class xxx",
+    "subseries": "ML",
     "platform": "W163",
-    "years": "1997 - 2005",
-    "bodytype": "SUV",
+    "years": "1997 - 2005 xx",
+    "bodytype": null,
     "fueltype": "Petrol & diesel",
     "title": "Mercedes Benz (M-Class) ML (W163) | Service  & repair manual |1997 - 2005 | Petrol & diesel",
     "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103002.jpg",
-    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103002.jpg"
+    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103002.jpg",
+    "url": "103002",
+    "manualname": "USD 103002 | Mercedes Benz (M-Class) ML (W163) | Service  & repair manual |1997 - 2005 | Petrol & diesel"
+  },
+  {
+    "make": "BMW",
+    "series": "3 Serie",
+    "subseries": "--",
+    "platform": "E46",
+    "years": "1999 -2005",
+    "bodytype": null,
+    "fueltype": "Petrol & diesel",
+    "title": "BMW E46 (3 Series) | Service & repair manual | 1999 -2005",
+    "catimage": "https://cmlc.imgix.net/Images/covers/cml/c/103007.jpg",
+    "proimage": "https://cmlp.imgix.net/Images/covers/cml/p/103007.jpg",
+    "url": "103007",
+    "manualname": "USD 103007 | BMW E46 (3 Series) | Service & repair manual | 1999 -2005"
   }
 ]
