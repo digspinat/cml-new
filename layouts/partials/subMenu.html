@@ -1,14 +1,15 @@
 <div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
     <ul class="pure-menu-list">
+      <li class="pure-menu-item subMenuItem"><a href="{{$.Site.BaseURL}}{{.Lang}}" class="pure-menu-link myElement">All Manuals</a></li>
       {{ $gistJ := getJSON "/data/makes.json" }}
       {{$myLang := .Lang}}
       {{ if eq $myLang "usd"}}
         {{ range $gistJ }}
-        <li class="pure-menu-item subMenuItem"><a href="/makes/{{.url}}" class="pure-menu-link myElement">{{.Lang}}{{.make}}</a></li>
+        <li class="pure-menu-item subMenuItem"><a href="/makes/{{.url}}" class="pure-menu-link myElement">{{.make}}</a></li>
         {{end}}
       {{else}}
         {{ range $gistJ }}
-        <li class="pure-menu-item subMenuItem"><a href="/{{$myLang}}/makes/{{.url}}" class="pure-menu-link myElement">{{.Lang}}{{.make}}</a></li>
+        <li class="pure-menu-item subMenuItem"><a href="/{{$myLang}}/makes/{{.url}}" class="pure-menu-link myElement">{{.make}}</a></li>
         {{end}}
       {{end}}
     </ul>

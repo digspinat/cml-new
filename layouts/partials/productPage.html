@@ -7,63 +7,34 @@
         </div>
         <div class="SendowlArea" style="">
           <div class="CurrencyArea">
-            <div class="Currency">
-              <h4 class="productTitle"><span class="BlueText">Currency: </span>{{.Params.currency}}</h4>
-            </div>
-            <div class="Rating">
-              <h4 class="productTitle"><span class="BlueText">Over all Rating: </span><div class="star-ratings-css">
-                <div class="star-ratings-css-top" style="width: {{.Params.overallrate}}%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-                <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-              </div></h4>
-            </div>
+              <h4 class="productTitle"><span class="BlueText">Over all Rating: </span>
+                {{ $empty := sub 5 .Params.overallrate }}
+                {{range seq .Params.overallrate}}
+                  <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                {{end}}
+                {{range seq $empty}}
+                  <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                {{end}}
+              </h4>
           </div>
           <div class="CurrencyArea">
-            <div class="Currency" style="width:100%;margin-top:-27px;">
-              <h4 class="productTitle" ><span class="BlueText">Price: </span>{{.Params.sendowlprice}}</h4>
-              <h4 class="productTitle"><span class="BlueText">Manual Status: </span>{{.Params.manualstatus}}</h4>
+            <h3 class="productTitle">{{.Title}}</h3>
+          </div>
+          <div class="CurrencyArea">
+            <div class="Currency" style="margin-top:0px;">
+              <h4 class="productTitle"><span class="BlueText">Price: </span>{{.Params.sendowlprice}}</h4>
+            </div>
+            <div class="Rating" style="color:black;">
+              <h4 class=""><span class="BlueText">Manual Status: </span>{{.Params.manualstatus}}</h4>
             </div>
           </div>
-          <div class="sendOwl" style="margin-top:160px;">
+          <div class="sendOwl">
             {{.Params.sendowl | safeHTML }}
           </div>
           <div class="addToCart">
             {{.Params.addtocart | markdownify}}
           </div>
-          <div class="carSpecification">
-            <h3 class="BlueText">Car Specification: </h3>
-            <table>
-              <tr>
-                <th>Make:</th>
-                <th>{{.Params.makes}}</th>
-              </tr>
-              <tr>
-                <th>Series:</th>
-                <th>{{.Params.series}}</th>
-              </tr>
-              <tr>
-                <th>Sub Series:</th>
-                <th>{{.Params.subseries}}</th>
-              </tr>
-              <tr>
-                <th>Platform:</th>
-                <th>{{.Params.platform}}</th>
-              </tr>
-              <tr>
-                <th>Year:</th>
-                <th>{{.Params.years}}</th>
-              </tr>
-              <tr>
-                <th>Bodytype:</th>
-                <th>{{range .Params.carspecs.carspecbodytype}}
-                  {{ .partialbodytypename }},
-                {{end}}</th>
-              </tr>
-              <tr>
-                <th>Fueltype:</th>
-                <th>{{.Params.fueltype}}</th>
-              </tr>
-            </table>
-          </div>
+          <!--Car Spec-->
         </div>
       </div>
   </div>
@@ -101,13 +72,47 @@
         </table>
       </div>
       <div class="PropsCons">
-        <h3 class="BlueText">Props and Cons</h3>
-        <div class="Props">
+        <h3 class="BlueText">Car Specification</h3>
+        <div class="carSpecification">
+          <table>
+            <tr>
+              <th>Make:</th>
+              <th>{{.Params.makes}}</th>
+            </tr>
+            <tr>
+              <th>Series:</th>
+              <th>{{.Params.series}}</th>
+            </tr>
+            <tr>
+              <th>Sub Series:</th>
+              <th>{{.Params.subseries}}</th>
+            </tr>
+            <tr>
+              <th>Platform:</th>
+              <th>{{.Params.platform}}</th>
+            </tr>
+            <tr>
+              <th>Year:</th>
+              <th>{{.Params.years}}</th>
+            </tr>
+            <tr>
+              <th>Bodytype:</th>
+              <th>{{range .Params.carspecs.carspecbodytype}}
+                {{ .partialbodytypename }},
+              {{end}}</th>
+            </tr>
+            <tr>
+              <th>Fueltype:</th>
+              <th>{{.Params.fueltype}}</th>
+            </tr>
+          </table>
+        </div>
+        <!-- <div class="Props">
           {{.Params.manualporp | markdownify}}
         </div>
         <div class="Cons">
           {{.Params.manualcons | markdownify}}
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -129,13 +134,16 @@
 <div class="ManArea" style="margin-top:20px;">
   <div class="productLayout">
     <div class="MannProp">
-      <div class="ManualArea">
         <h3 class="BlueText">Manual Previews</h3>
         <div style="margin-left:-12px;">
           {{ .Content | markdownify }}
         </div>
-      </div>
-      <div class="PropsCons">
+    </div>
+  </div>
+</div>
+<div class="ManArea" style="margin-top:20px;">
+  <div class="productLayout">
+    <div class="MannProp">
         <h3 style="margin-left:8px;" class="BlueText">Manual Reviews</h3>
         {{range .Params.manualreview}}
           <div class="ReviewBox">
@@ -145,7 +153,6 @@
             <p><strong>Message:</strong>{{.reviewItemDescr | markdownify}}</p>
           </div>
         {{end}}
-      </div>
     </div>
   </div>
 </div>

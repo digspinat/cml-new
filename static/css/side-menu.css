@@ -3,6 +3,15 @@ body {
     /*height: 100%;*/
 }
 /*Filter CSS*/
+.myPurchase{
+  background-color: #7a8690;
+  color: black;
+  border: 1px solid #e8eaec;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+}
+
 .FilterArea{
   margin-left: 20px;
   color: black;
@@ -107,14 +116,14 @@ body {
   color: white;
   background-color: #01ba02;
   border-radius: 5px;
-  margin: 1px;
+  margin: -1px;
   font-size: 12px;
 }
 .empty-myStart{
   color: white;
   background-color: gray;
   border-radius: 5px;
-  margin: 1px;
+  margin: -1px;
   font-size: 12px;
 }
 .fa{
@@ -157,7 +166,7 @@ body {
   margin-top:-23px;
 }
 .Rating h4 {
-  margin-top: 16px;
+  margin-top: 21px;
 }
 .addToCart li{
   list-style: none;
@@ -178,13 +187,10 @@ body {
   margin-left: -32px;
   margin-top: 25px;
 }
-.carSpecification {
-  margin-top: 25px;
-}
 .carSpecification table {
   border-collapse: collapse;
   border-spacing: 0;
-  width: 70%;
+  width: 85%;
   border: 1px solid #ddd;
   color: black;
   color: black;
@@ -376,12 +382,13 @@ body {
   text-align: center;
   line-height: 75px;
   color: black;
+  margin-top: 158px;
 }
 .subMenu{
   background-color: #e1e9ee;
   position: fixed;
   width: 100%;
-  top: 100px;
+  top: 110px;
   z-index: 1;
 }
 .mainMenu{
@@ -434,7 +441,7 @@ body {
   margin-top: 50px;
 }
 .myMainMenu li a{
-  font-size: 20px;
+  font-size: 16px;
   padding-left: 10px;
   padding-right: 10px;
   color: white;
@@ -446,10 +453,15 @@ body {
   text-decoration: none;
   background-color: black;
 }
+.myMainMenu li a.myPurchase:hover{
+  color: white;
+  text-decoration: none;
+  background-color: #0085da;
+}
 .custom-wrapper {
   margin-bottom: 1em;
   -webkit-font-smoothing: antialiased;
-  height: 2.2em;
+  height: 2.8em;
   overflow: hidden;
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
