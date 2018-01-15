@@ -1,16 +1,20 @@
+<input type="hidden" value="{{.Lang}}" id="myLang1">
 <script type="text/javascript">
   var client = algoliasearch("YZO8M6AZ6J", "74516bbcef74ec917e2acbcd0df2df0f");
   var index = client.initIndex('cml-new');
   var searchBrand = $("#display_brand").val();
-
+  var myLang = $("#myLang1").val();
   $(document).ready(function(){
   var client = algoliasearch("YZO8M6AZ6J", "74516bbcef74ec917e2acbcd0df2df0f");
   var index = client.initIndex('cml-new');
   var searchBrand = $("#display_brand").val();
+  var Currency = [];
+  Currency.push("currency:"+myLang)
   if(searchBrand){
     var mainSearch = [], BrandArray = [];
     BrandArray.push("make:"+searchBrand);
     mainSearch.push(BrandArray);
+    mainSearch.push(Currency);
     index.search({
       query: '*',
       hitsPerPage: 9,
@@ -60,9 +64,13 @@
       $("#MyPaginationHere").html(pagination)
     });
   }else{
+    var Currency = [], mainSearch = [];
+    Currency.push("currency:"+myLang)
+    mainSearch.push(Currency);
     index.search({
       query: '*',
       hitsPerPage: 9,
+      facetFilters: mainSearch,
       facets: ['make','series','subseries','years','platform']
     }).then(res => {
 
@@ -118,6 +126,8 @@ $(document).on('click','.mySearch',function(){
     var SubseriesSearch = [], SubseriesArray = [];
     var YearSerach = [], YearArray = [];
     var PlatformSearch = [], PlatformArray = [];
+    var Currency = [];
+    Currency.push("currency:"+myLang)
     if(searchBrand){
       BrandSearch.push("make:"+searchBrand);
       $('.searchBrand').each(function(){
@@ -167,7 +177,7 @@ $(document).on('click','.mySearch',function(){
     MainSearch.push(SubseriesSearch);
     MainSearch.push(YearSerach);
     MainSearch.push(PlatformSearch);
-
+    MainSearch.push(Currency);
     index.search({
       query: '*',
       hitsPerPage: 9,
@@ -239,15 +249,22 @@ $(document).on('click','.mySearch',function(){
               "<a href='{{$.Site.BaseURL}}"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
             "</div>"+
             "<div class='productDesc'>"+
-              "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a>"+
-              "<ul>"+
+              "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a><br>Rating: ";
+              var empty = 5-val['rate'];
+              for(var j=1;j<=val['rate'];j++){
+                prodcuct += "<span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>"
+              }
+              for(var k=1;k<=empty;k++){
+                prodcuct += "<span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>"
+              }
+        prodcuct += "<ul>"+
                   "<li>Make: "+val['make']+"</li>"+
                   "<li>Series: "+val['series']+"</li>"+
                   "<li>Subseries: "+val['subseries']+"</li>"+
                   "<li>Platform: "+val['platform']+"</li>"+
                   "<li>Year: "+val['years']+"</li>"+
               "</ul>"+
-              "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
+              "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>Price: "+val['price']+"</a>"+
             "</div>"+
           "</div>"+
         "</div>";
@@ -267,6 +284,8 @@ $(document).on('click','.mySearch',function(){
     var SubseriesSearch = [], SubseriesArray = [];
     var YearSerach = [], YearArray = [];
     var PlatformSearch = [], PlatformArray = [];
+    var Currency = [];
+    Currency.push("currency:"+myLang)
     if(searchBrand){
       BrandSearch.push("make:"+searchBrand);
       $('.searchBrand').each(function(){
@@ -316,6 +335,7 @@ $(document).on('click','.mySearch',function(){
     MainSearch.push(SubseriesSearch);
     MainSearch.push(YearSerach);
     MainSearch.push(PlatformSearch);
+    MainSearch.push(Currency);
 
     index.search({
       query: '*',
@@ -388,15 +408,22 @@ $(document).on('click','.mySearch',function(){
               "<a href='{{$.Site.BaseURL}}"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
             "</div>"+
             "<div class='productDesc'>"+
-              "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a>"+
-              "<ul>"+
+              "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a><br>Rating: ";
+              var empty = 5-val['rate'];
+              for(var j=1;j<=val['rate'];j++){
+                prodcuct += "<span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>"
+              }
+              for(var k=1;k<=empty;k++){
+                prodcuct += "<span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>"
+              }
+        prodcuct += "<ul>"+
                   "<li>Make: "+val['make']+"</li>"+
                   "<li>Series: "+val['series']+"</li>"+
                   "<li>Subseries: "+val['subseries']+"</li>"+
                   "<li>Platform: "+val['platform']+"</li>"+
                   "<li>Year: "+val['years']+"</li>"+
               "</ul>"+
-              "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
+              "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>Price: "+val['price']+"</a>"+
             "</div>"+
           "</div>"+
         "</div>";
@@ -422,6 +449,8 @@ $(document).on('click','#PreviousPage',function(){
     var SubseriesSearch = [], SubseriesArray = [];
     var YearSerach = [], YearArray = [];
     var PlatformSearch = [], PlatformArray = [];
+    var Currency = [];
+    Currency.push("currency:"+myLang)
     if(searchBrand){
       BrandSearch.push("make:"+searchBrand);
       $('.searchBrand').each(function(){
@@ -471,6 +500,8 @@ $(document).on('click','#PreviousPage',function(){
     MainSearch.push(SubseriesSearch);
     MainSearch.push(YearSerach);
     MainSearch.push(PlatformSearch);
+    MainSearch.push(Currency);
+
     var searchvalue = $("#searchInput").val();
     index.search({
       query: searchvalue,
@@ -546,15 +577,22 @@ $(document).on('click','#PreviousPage',function(){
                 "<a href='{{$.Site.BaseURL}}"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
               "</div>"+
               "<div class='productDesc'>"+
-                "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a>"+
-                "<ul>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a><br>Rating: ";
+                var empty = 5-val['rate'];
+                for(var j=1;j<=val['rate'];j++){
+                  prodcuct += "<span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>"
+                }
+                for(var k=1;k<=empty;k++){
+                  prodcuct += "<span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>"
+                }
+          prodcuct += "<ul>"+
                     "<li>Make: "+val['make']+"</li>"+
                     "<li>Series: "+val['series']+"</li>"+
                     "<li>Subseries: "+val['subseries']+"</li>"+
                     "<li>Platform: "+val['platform']+"</li>"+
                     "<li>Year: "+val['years']+"</li>"+
                 "</ul>"+
-                "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>Price: "+val['price']+"</a>"+
               "</div>"+
             "</div>"+
           "</div>";
@@ -582,6 +620,9 @@ $(document).on('click','#NextPage',function(){
     var SubseriesSearch = [], SubseriesArray = [];
     var YearSerach = [], YearArray = [];
     var PlatformSearch = [], PlatformArray = [];
+    var Currency = [];
+    Currency.push("currency:"+myLang)
+
     if(searchBrand){
       BrandSearch.push("make:"+searchBrand);
       $('.searchBrand').each(function(){
@@ -631,6 +672,7 @@ $(document).on('click','#NextPage',function(){
     MainSearch.push(SubseriesSearch);
     MainSearch.push(YearSerach);
     MainSearch.push(PlatformSearch);
+    MainSearch.push(Currency);
     var searchvalue = $("#searchInput").val();
     index.search({
       query: searchvalue,
@@ -706,15 +748,22 @@ $(document).on('click','#NextPage',function(){
                 "<a href='{{$.Site.BaseURL}}"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
               "</div>"+
               "<div class='productDesc'>"+
-                "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a>"+
-                "<ul>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a><br>Rating: ";
+                var empty = 5-val['rate'];
+                for(var j=1;j<=val['rate'];j++){
+                  prodcuct += "<span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>"
+                }
+                for(var k=1;k<=empty;k++){
+                  prodcuct += "<span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>"
+                }
+          prodcuct += "<ul>"+
                     "<li>Make: "+val['make']+"</li>"+
                     "<li>Series: "+val['series']+"</li>"+
                     "<li>Subseries: "+val['subseries']+"</li>"+
                     "<li>Platform: "+val['platform']+"</li>"+
                     "<li>Year: "+val['years']+"</li>"+
                 "</ul>"+
-                "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>Price: "+val['price']+"</a>"+
               "</div>"+
             "</div>"+
           "</div>";
@@ -738,6 +787,8 @@ $(document).on('keyup', '#searchInput', function(){
     var SubseriesSearch = [], SubseriesArray = [];
     var YearSerach = [], YearArray = [];
     var PlatformSearch = [], PlatformArray = [];
+    var Currency = [];
+    Currency.push("currency:"+myLang)
     BrandSearch.push("make:"+searchBrand);
     $('.searchSeries').each(function(){
       if (this.checked) {
@@ -769,6 +820,7 @@ $(document).on('keyup', '#searchInput', function(){
     MainSearch.push(SubseriesSearch);
     MainSearch.push(YearSerach);
     MainSearch.push(PlatformSearch);
+    MainSearch.push(Currency);
     index.search({
       query: searchvalue,
       hitsPerPage: 9,
@@ -842,15 +894,22 @@ $(document).on('keyup', '#searchInput', function(){
                 "<a href='{{$.Site.BaseURL}}"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
               "</div>"+
               "<div class='productDesc'>"+
-                "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a>"+
-                "<ul>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a><br>Rating: ";
+                var empty = 5-val['rate'];
+                for(var j=1;j<=val['rate'];j++){
+                  prodcuct += "<span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>"
+                }
+                for(var k=1;k<=empty;k++){
+                  prodcuct += "<span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>"
+                }
+          prodcuct += "<ul>"+
                     "<li>Make: "+val['make']+"</li>"+
                     "<li>Series: "+val['series']+"</li>"+
                     "<li>Subseries: "+val['subseries']+"</li>"+
                     "<li>Platform: "+val['platform']+"</li>"+
                     "<li>Year: "+val['years']+"</li>"+
                 "</ul>"+
-                "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>Price: "+val['price']+"</a>"+
               "</div>"+
             "</div>"+
           "</div>";
@@ -869,6 +928,8 @@ $(document).on('keyup', '#searchInput', function(){
     var SubseriesSearch = [], SubseriesArray = [];
     var YearSerach = [], YearArray = [];
     var PlatformSearch = [], PlatformArray = [];
+    var Currency = [];
+    Currency.push("currency:"+myLang)
     $('.searchBrand').each(function(){
       if (this.checked) {
         BrandSearch.push("make:"+$(this).val());
@@ -905,6 +966,7 @@ $(document).on('keyup', '#searchInput', function(){
     MainSearch.push(SubseriesSearch);
     MainSearch.push(YearSerach);
     MainSearch.push(PlatformSearch);
+    MainSearch.push(Currency);
     index.search({
       query: searchvalue,
       hitsPerPage: 9,
@@ -978,15 +1040,22 @@ $(document).on('keyup', '#searchInput', function(){
                 "<a href='{{$.Site.BaseURL}}"+val['url']+"'><img src='"+val['catimage']+"' alt=''></a>"+
               "</div>"+
               "<div class='productDesc'>"+
-                "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a>"+
-                "<ul>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"'>"+val['manualname']+"</a><br>Rating: ";
+                var empty = 5-val['rate'];
+                for(var j=1;j<=val['rate'];j++){
+                  prodcuct += "<span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>"
+                }
+                for(var k=1;k<=empty;k++){
+                  prodcuct += "<span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>"
+                }
+          prodcuct += "<ul>"+
                     "<li>Make: "+val['make']+"</li>"+
                     "<li>Series: "+val['series']+"</li>"+
                     "<li>Subseries: "+val['subseries']+"</li>"+
                     "<li>Platform: "+val['platform']+"</li>"+
                     "<li>Year: "+val['years']+"</li>"+
                 "</ul>"+
-                "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>More Info</a>"+
+                "<a href='{{$.Site.BaseURL}}"+val['url']+"' class='ProductBorderButton'>Price: "+val['price']+"</a>"+
               "</div>"+
             "</div>"+
           "</div>";

@@ -103,6 +103,23 @@ body {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+.myStart{
+  color: white;
+  background-color: #01ba02;
+  border-radius: 5px;
+  margin: 1px;
+  font-size: 12px;
+}
+.empty-myStart{
+  color: white;
+  background-color: gray;
+  border-radius: 5px;
+  margin: 1px;
+  font-size: 12px;
+}
+.fa{
+  margin-left: 3px;
+}
 /*END Page CSS*/
 /*Product Page Layout CSS*/
 .BlueText {
@@ -297,19 +314,16 @@ body {
   padding: 8px;
 }
 .productImage img {
-  height: 266px;
-  width: 200px;
+  height: 400px;
+  width: 310px;
   margin: 0 auto;
 }
 .productDesc{
   color: black;
   padding-top: 10px;
-  padding-left: 67px;
-  padding-right: 44px;
+  padding-left: 28px;
+  padding-right: 30px;
   position: relative;
-}
-.productDesc ul{
-  margin-left: -23px;
 }
 .ProductBorderButton{
   background-color: white;
@@ -406,7 +420,7 @@ body {
   background-color: #7a8690;
 }
 .contentLayout{
-  max-width: 1266px;
+  max-width: 1394px;
   background-color: white;
   margin: 0 auto;
   margin-top: 149px;
@@ -630,7 +644,7 @@ body {
 }
 @media screen and (max-width: 961px) and (min-width: 959px) {
   .contentLayout{
-    max-width: 800px;
+    max-width: 880px;
     background-color: white;
     margin: 0 auto;
     margin-top: 149px;
@@ -651,7 +665,7 @@ body {
 }
 @media screen and (max-width: 1279px) and (min-width: 1024px) {
   .contentLayout{
-    max-width: 854px;
+    max-width: 939px;
     background-color: white;
     margin: 0 auto;
     margin-top: 149px;
@@ -670,7 +684,7 @@ body {
 
 @media screen and (max-width: 1365px) and (min-width: 1280px) {
   .contentLayout{
-    max-width: 1066px;
+    max-width: 1174px;
     background-color: white;
     margin: 0 auto;
     margin-top: 149px;
@@ -689,7 +703,7 @@ body {
 
 @media screen and (max-width: 1377px) and (min-width: 1366px) {
   .contentLayout{
-    max-width: 1138px;
+    max-width: 1253px;
     background-color: white;
     margin: 0 auto;
     margin-top: 149px;

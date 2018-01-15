@@ -7,12 +7,38 @@
               <h4>Footer Layout 2</h4>
             </div>
             <div class="pure-u-1 pure-u-md-1-3">
-              <h4>Footer Layout 3</h4>
+              <h4>
+                Currency:&nbsp;
+                <select id="state" style="color:black;">
+                    <option value="usd">USD</option>
+                    <option value="aud">AUD</option>
+                    <option value="cad">CAD</option>
+                    <option value="chf">CHF</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                    <option value="hkd">HKD</option>
+                    <option value="inr">INR</option>
+                    <option value="nzd">NZD</option>
+                    <option value="sgd">SGD</option>
+                    <option value="zar">ZAR</option>
+                </select>
+              </h4>
             </div>
         </div>
       </div>
     </div>
   </div>
-<script src="{{ .Site.BaseURL }}js/ui.js"></script>
+  <script src="{{ .Site.BaseURL }}js/ui.js"></script>
+  <input type="hidden" id="myBaseUrl" value="{{$.Site.BaseURL}}">
+  <input type="hidden" id="myLang" value="{{ .Lang }}">
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var myLang = $("#myLang").val();
+      $("#state").val(myLang)
+      $("#state").change(function(){
+        window.location.href = $("#myBaseUrl").val()+$(this).val();
+      });
+    });
+  </script>
 </body>
 </html>

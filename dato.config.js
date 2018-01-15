@@ -1,8 +1,8 @@
 module.exports = (dato, root, i18n) => {
   console.log(dato.manuals);
-  root.directory("content/manual", (dir) => {
+  root.directory("content/manuals", (dir) => {
     dato.manuals.forEach((manuals) => {
-        dir.createPost(`${manuals.url}.md`, "yaml", {
+        dir.createPost(`${manuals.currencyUrl}.${manuals.manualCurrency}.md`, "yaml", {
           frontmatter: {
             title: manuals.manualTitle,
             manualname: manuals.manualName,
@@ -29,8 +29,8 @@ module.exports = (dato, root, i18n) => {
             addtocart: manuals.addToCart.addToCartList,
             catimage: manuals.imageCatalogPage,
             proimage: manuals.imageProductPage,
-            url: manuals.url,
-            slug: manuals.url,
+            url: manuals.currencyUrl,
+            slug: manuals.currencyUrl,
             mssuitable: manuals.manualSpecs.manualSpecSuitable,
             mslanguage: manuals.manualSpecs.msLanguage,
             msformat: manuals.manualSpecs.msFormat,
@@ -64,6 +64,9 @@ module.exports = (dato, root, i18n) => {
       content['proimage'] = Manuals.imageProductPage;
       content['url'] = Manuals.url;
       content['manualname'] = Manuals.manualName;
+      content['currency'] = Manuals.manualCurrency;
+      content['price'] = Manuals.manualSendowl.soPrice;
+      content['rate'] = Manuals.review.revOverallRating
       myall.push(content)
       if(j == 1){
         checkbrand.push(Manuals.carSpecs.cpMake);
@@ -85,7 +88,137 @@ module.exports = (dato, root, i18n) => {
 
   root.directory("content/", (dir) => {
     dato.pages.forEach((Page, i) => {
-        dir.createPost(`${Page.slug}.md`, "yaml", {
+        dir.createPost(`${Page.slug}.aud.md`, "yaml", {
+          frontmatter: {
+            title: Page.pgeTitle,
+            type: "mypage",
+            description: Page.pageDescription,
+            weight: i
+          },
+          content: Page.pageDescription
+        });
+      });
+  });
+  root.directory("content/", (dir) => {
+    dato.pages.forEach((Page, i) => {
+        dir.createPost(`${Page.slug}.cad.md`, "yaml", {
+          frontmatter: {
+            title: Page.pgeTitle,
+            type: "mypage",
+            description: Page.pageDescription,
+            weight: i
+          },
+          content: Page.pageDescription
+        });
+      });
+  });
+  root.directory("content/", (dir) => {
+    dato.pages.forEach((Page, i) => {
+        dir.createPost(`${Page.slug}.chf.md`, "yaml", {
+          frontmatter: {
+            title: Page.pgeTitle,
+            type: "mypage",
+            description: Page.pageDescription,
+            weight: i
+          },
+          content: Page.pageDescription
+        });
+      });
+  });
+  root.directory("content/", (dir) => {
+    dato.pages.forEach((Page, i) => {
+        dir.createPost(`${Page.slug}.eur.md`, "yaml", {
+          frontmatter: {
+            title: Page.pgeTitle,
+            type: "mypage",
+            description: Page.pageDescription,
+            weight: i
+          },
+          content: Page.pageDescription
+        });
+      });
+  });
+  root.directory("content/", (dir) => {
+    dato.pages.forEach((Page, i) => {
+        dir.createPost(`${Page.slug}.gbp.md`, "yaml", {
+          frontmatter: {
+            title: Page.pgeTitle,
+            type: "mypage",
+            description: Page.pageDescription,
+            weight: i
+          },
+          content: Page.pageDescription
+        });
+      });
+  });
+  root.directory("content/", (dir) => {
+    dato.pages.forEach((Page, i) => {
+        dir.createPost(`${Page.slug}.hkd.md`, "yaml", {
+          frontmatter: {
+            title: Page.pgeTitle,
+            type: "mypage",
+            description: Page.pageDescription,
+            weight: i
+          },
+          content: Page.pageDescription
+        });
+      });
+  });
+  root.directory("content/", (dir) => {
+    dato.pages.forEach((Page, i) => {
+        dir.createPost(`${Page.slug}.inr.md`, "yaml", {
+          frontmatter: {
+            title: Page.pgeTitle,
+            type: "mypage",
+            description: Page.pageDescription,
+            weight: i
+          },
+          content: Page.pageDescription
+        });
+      });
+  });
+  root.directory("content/", (dir) => {
+    dato.pages.forEach((Page, i) => {
+        dir.createPost(`${Page.slug}.nzd.md`, "yaml", {
+          frontmatter: {
+            title: Page.pgeTitle,
+            type: "mypage",
+            description: Page.pageDescription,
+            weight: i
+          },
+          content: Page.pageDescription
+        });
+      });
+  });
+  root.directory("content/", (dir) => {
+    dato.pages.forEach((Page, i) => {
+        dir.createPost(`${Page.slug}.sgd.md`, "yaml", {
+          frontmatter: {
+            title: Page.pgeTitle,
+            type: "mypage",
+            description: Page.pageDescription,
+            weight: i
+          },
+          content: Page.pageDescription
+        });
+      });
+  });
+  root.directory("content/", (dir) => {
+    dato.pages.forEach((Page, i) => {
+        dir.createPost(`${Page.slug}.usd.md`, "yaml", {
+          frontmatter: {
+            title: Page.pgeTitle,
+            type: "mypage",
+            description: Page.pageDescription,
+            weight: i
+          },
+          content: Page.pageDescription
+        });
+      });
+  });
+  root.directory("content/", (dir) => {
+    dato.pages.forEach((Page, i) => {
+        dir.createPost(`${Page.slug}.zar.md`, "yaml", {
           frontmatter: {
             title: Page.pgeTitle,
             type: "mypage",

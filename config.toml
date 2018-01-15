@@ -7,6 +7,8 @@ contentDir = "content"
 layoutDir = "layouts"
 publishDir = "public"
 paginate = 10
+defaultContentLanguage = "usd"
+canonifyurls = true
 
 [indexes]
   tag = "tags"
@@ -25,14 +27,122 @@ paginate = 10
   highlightjs = "androidstudio"
   dateFormat = "02 Jan 2006, 15:04"
 
-[menu]
-  # Shown in the side menu.
-  [[menu.main]]
+[languages]
+[languages.usd]
+  weight = 0
+  title = "Carmanuls Lib: USD"
+  [[languages.usd.menu.main]]
     name = "Home"
     pre = "<i class='fa fa-home fa-fw'></i>"
     weight = 1
     identifier = "home"
     url = "/"
+[languages.aud]
+  weight = 1
+  title = "Carmanuls Lib: AUD"
+  [[languages.aud.menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/aud"
+
+[languages.cad]
+  weight = 2
+  title = "Carmanuls Lib: CAD"
+  [[languages.cad.menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/cad"
+[languages.chf]
+  weight = 3
+  title = "Carmanuls Lib: CHF"
+  [[languages.chf.menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/chf"
+
+[languages.eur]
+  weight = 4
+  title = "Carmanuls Lib: EUR"
+  [[languages.eur.menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/eur"
+
+[languages.gbp]
+  weight = 5
+  title = "Carmanuls Lib: GBP"
+  [[languages.gbp.menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/gbp"
+
+[languages.hkd]
+  weight = 6
+  title = "Carmanuls Lib: HKD"
+  [[languages.hkd.menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/hkd"
+
+[languages.inr]
+  weight = 7
+  title = "Carmanuls Lib: INR"
+  [[languages.inr.menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/inr"
+
+[languages.nzd]
+  weight = 8
+  title = "Carmanuls Lib: NZD"
+  [[languages.nzd.menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/nzd"
+
+[languages.sgd]
+  weight = 9
+  title = "Carmanuls Lib: SGD"
+  [[languages.sgd.menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/sgd"
+
+[languages.zar]
+  weight = 11
+  title = "Carmanuls Lib: ZAR"
+  [[languages.zar.menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/zar"
+# [menu]
+#   # Shown in the side menu.
+#   [[menu.main]]
+#     name = "Home"
+#     pre = "<i class='fa fa-home fa-fw'></i>"
+#     weight = 1
+#     identifier = "home"
+#     url = "/"
 
 [social]
   twitter = "*"

@@ -1,85 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://cml-new.netlify.com/faq/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/103003/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/about-us/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/makes/audi/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/103006/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/103005/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/103004/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/103007/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/103001/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/makes/bmw/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/makes/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/manual/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/makes/mercedes/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/103002/</loc>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://cml-new.netlify.com/topics/</loc>
-    <priority>0</priority>
-  </url>
-  
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>https://cml-new.netlify.com/usd/sitemap.xml</loc>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://cml-new.netlify.com/aud/sitemap.xml</loc>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://cml-new.netlify.com/cad/sitemap.xml</loc>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://cml-new.netlify.com/chf/sitemap.xml</loc>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://cml-new.netlify.com/eur/sitemap.xml</loc>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://cml-new.netlify.com/gbp/sitemap.xml</loc>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://cml-new.netlify.com/hkd/sitemap.xml</loc>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://cml-new.netlify.com/inr/sitemap.xml</loc>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://cml-new.netlify.com/nzd/sitemap.xml</loc>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://cml-new.netlify.com/sgd/sitemap.xml</loc>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://cml-new.netlify.com/zar/sitemap.xml</loc>
+		
+	</sitemap>
+	
+</sitemapindex>

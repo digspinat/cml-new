@@ -1,8 +1,15 @@
 <div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
     <ul class="pure-menu-list">
       {{ $gistJ := getJSON "/data/makes.json" }}
-      {{ range $gistJ }}
-        <li class="pure-menu-item subMenuItem"><a href="/makes/{{.url}}" class="pure-menu-link myElement">{{.make}}</a></li>
+      {{$myLang := .Lang}}
+      {{ if eq $myLang "usd"}}
+        {{ range $gistJ }}
+        <li class="pure-menu-item subMenuItem"><a href="/makes/{{.url}}" class="pure-menu-link myElement">{{.Lang}}{{.make}}</a></li>
+        {{end}}
+      {{else}}
+        {{ range $gistJ }}
+        <li class="pure-menu-item subMenuItem"><a href="/{{$myLang}}/makes/{{.url}}" class="pure-menu-link myElement">{{.Lang}}{{.make}}</a></li>
+        {{end}}
       {{end}}
     </ul>
 </div>
