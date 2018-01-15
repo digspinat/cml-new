@@ -302,7 +302,6 @@ body {
   padding: 10px;
 }
 .ReviewBox{
-  margin: 8px;
   padding: 8px;
   color: black;
   font-size: 14px;
@@ -361,13 +360,9 @@ body {
 .subMenuItem a:visited {
   color: black;
 }
-/*.subMenuItem a:hover {
+.subMenuItem a:hover {
   color: white;
   background-color: #0085da;
-}*/
-.subMenuItem a.myPurchase:hover {
-  color: white;
-  background-color: white;
 }
 .footerLayout{
   background-color: #181d1e;
@@ -390,9 +385,16 @@ body {
 }
 .subMenu{
   background-color: #e1e9ee;
-  position: fixed;
+  /*position: fixed;*/
   width: 100%;
   top: 110px;
+  z-index: -100;
+}
+.subMenu1{
+  background-color: #e1e9ee;
+  position: fixed;
+  width: 100%;
+  top: 200px;
   z-index: 1;
 }
 .mainMenu{
@@ -400,7 +402,7 @@ body {
   width: 100%;
   background-color: #7a8690;
   top: 0;
-  z-index: 2;
+  z-index: 200;
 }
 .pure-menu-heading{
   margin: 0;
@@ -435,6 +437,7 @@ body {
   background-color: white;
   margin: 0 auto;
   margin-top: 149px;
+  z-index: 200;
 }
 .pure-img-responsive {
   max-width: 100%;
@@ -456,6 +459,11 @@ body {
   color: white;
   text-decoration: none;
   background-color: black;
+}
+.myMainMenu li a.myPurchase:hover{
+  color: white;
+  text-decoration: none;
+  background-color: #0085da;
 }
 .custom-wrapper {
   margin-bottom: 1em;
