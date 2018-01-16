@@ -388,21 +388,28 @@ body {
   position: fixed;
   width: 100%;
   top: 110px;
-  z-index: 1;
+  z-index: 3;
+}
+.BetMenu{
+  background-color: #f9fafc;
+  width: 100%;
+  top: 110px;
+  z-index: 4;
+  height: 200px;
+  color: black;
 }
 .subMenu1{
   background-color: #e1e9ee;
-  position: fixed;
   width: 100%;
-  top: 200px;
-  z-index: 1;
+  top: 110px;
+  z-index: 4;
 }
 .mainMenu{
   position: fixed;
   width: 100%;
   background-color: #7a8690;
   top: 0;
-  z-index: 200;
+  z-index: 5;
 }
 .pure-menu-heading{
   margin: 0;
@@ -432,11 +439,15 @@ body {
 .subChangeLayout{
   background-color: #7a8690;
 }
+.subChangeLayoutBet{
+  background-color: #7a8690;
+}
 .contentLayout{
   max-width: 1394px;
   background-color: white;
   margin: 0 auto;
-  margin-top: 149px;
+  margin-top: -48px;
+  z-index: 2;
 }
 .pure-img-responsive {
   max-width: 100%;
@@ -467,7 +478,7 @@ body {
 .custom-wrapper {
   margin-bottom: 1em;
   -webkit-font-smoothing: antialiased;
-  height: 2.8em;
+  height: 2.78em;
   overflow: hidden;
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
@@ -475,7 +486,7 @@ body {
   transition: height 0.5s;
 }
 .custom-wrapper.open {
-    height: 13em;
+    height: 16em;
 }
 .custom-menu-3 {
     text-align: right;
@@ -568,6 +579,9 @@ body {
   display: block;
 }
 /*End Star*/
+.myContainer{
+  position: relative;
+}
 @media screen and (max-width: 376px) and (min-width: 374px) {
   .productDesc{
     color: black;
@@ -596,6 +610,9 @@ body {
     .subChangeLayout{
       background-color: #e1e9ee;
     }
+    .subChangeLayoutBet{
+      background-color: #f9fafc;
+    }
     .leftAlgolia{
       clear: both;
       width: 100%;
@@ -619,8 +636,8 @@ body {
     .productDesc{
       color: black;
       padding-top: 10px;
-      padding-left: 107px;
-      padding-right: 90px;
+      padding-left: 37px;
+      padding-right: 37px;
       position: relative;
     }
     .productLayout{
@@ -665,7 +682,7 @@ body {
     max-width: 880px;
     background-color: white;
     margin: 0 auto;
-    margin-top: 149px;
+    margin-top: -48px;
   }
   .productDesc{
     color: black;
@@ -686,13 +703,13 @@ body {
     max-width: 939px;
     background-color: white;
     margin: 0 auto;
-    margin-top: 149px;
+    margin-top: -48px;
   }
   .productDesc{
     color: black;
     padding-top: 10px;
-    padding-left: 15px;
-    padding-right: 44px;
+    padding-left: 8px;
+    padding-right: 8px;
     position: relative;
   }
   .productLayout{
@@ -705,13 +722,13 @@ body {
     max-width: 1174px;
     background-color: white;
     margin: 0 auto;
-    margin-top: 149px;
+    margin-top: -48px;
   }
   .productDesc{
     color: black;
     padding-top: 10px;
-    padding-left: 40px;
-    padding-right: 44px;
+    padding-left: 7px;
+    padding-right: 7px;
     position: relative;
   }
   .productLayout{
@@ -724,13 +741,13 @@ body {
     max-width: 1253px;
     background-color: white;
     margin: 0 auto;
-    margin-top: 149px;
+    margin-top: -48px;
   }
   .productDesc{
     color: black;
     padding-top: 10px;
-    padding-left: 50px;
-    padding-right: 44px;
+    padding-left: 10px;
+    padding-right: 10px;
     position: relative;
   }
   .productLayout{

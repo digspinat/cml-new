@@ -38,7 +38,8 @@ module.exports = (dato, root, i18n) => {
             mspages: manuals.manualSpecs.msPages,
             mstype: manuals.manualSpecs.msType,
             manualporp: manuals.propCons.pro,
-            manualcons: manuals.propCons.con
+            manualcons: manuals.propCons.con,
+            gtm: manuals.gtm
           },
           content: manuals.partialPreview.previewDesc
         });

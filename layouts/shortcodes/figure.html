@@ -8,7 +8,7 @@ NB this overrides Hugo's built-in "figure" shortcode but is backwards compatible
         <img itemprop="thumbnail"
             src="{{ with .Get "src" }}{{.}}{{ else }}{{ printf "%s." (.Get "thumb") | replace (.Get "link") "." }}{{ end }}"
             {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt" }}{{.}}{{else}}{{ .Get "caption" }}{{ end }}"{{ end }}
-            {{ with .Get "width" }}width="{{.}}"{{ end }} style="height:145px;width:112px;"/>
+            {{ with .Get "width" }}width="{{.}}"{{ end }} style="height:300px;width:200px;"/>
     </a>
     {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
     <figcaption>
