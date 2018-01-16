@@ -443,7 +443,7 @@ body {
   background-color: #7a8690;
 }
 .contentLayout{
-  max-width: 1394px;
+  /*max-width: 1394px;*/
   background-color: white;
   margin: 0 auto;
   margin-top: -48px;
@@ -582,7 +582,7 @@ body {
 .myContainer{
   position: relative;
 }
-@media screen and (max-width: 376px) and (min-width: 374px) {
+/*@media screen and (max-width: 376px) and (min-width: 374px) {
   .productDesc{
     color: black;
     padding-top: 10px;
@@ -677,9 +677,13 @@ body {
       margin-left: -30px;
     }
 }
+@media screen and (max-width: 958px) and (min-width: 764px) {
+  .subChangeLayout{
+    background-color: #e1e9ee;
+  }
+}
 @media screen and (max-width: 961px) and (min-width: 959px) {
   .contentLayout{
-    max-width: 880px;
     background-color: white;
     margin: 0 auto;
     margin-top: -48px;
@@ -698,9 +702,8 @@ body {
     width: 100%;
   }
 }
-@media screen and (max-width: 1279px) and (min-width: 1024px) {
+@media screen and (max-width: 1050px) and (min-width: 1024px) {
   .contentLayout{
-    max-width: 939px;
     background-color: white;
     margin: 0 auto;
     margin-top: -48px;
@@ -716,10 +719,19 @@ body {
     padding: 8px;
   }
 }
+@media screen and (max-width: 1100px) and (min-width: 1050px) {
+  .contentLayout{
+    background-color: white;
+    margin: 0 auto;
+    margin-top: -48px;
+  }
+  .productLayout{
+    padding: 8px;
+  }
+}
 
 @media screen and (max-width: 1365px) and (min-width: 1280px) {
   .contentLayout{
-    max-width: 1174px;
     background-color: white;
     margin: 0 auto;
     margin-top: -48px;
@@ -738,7 +750,6 @@ body {
 
 @media screen and (max-width: 1377px) and (min-width: 1366px) {
   .contentLayout{
-    max-width: 1253px;
     background-color: white;
     margin: 0 auto;
     margin-top: -48px;
@@ -752,5 +763,592 @@ body {
   }
   .productLayout{
     padding: 8px;
+  }
+}
+@media screen and (max-width: 1545px) and (min-width: 1362px) {
+  .contentLayout{
+    background-color: white;
+    margin: 0 auto;
+    margin-top: -48px;
+  }
+}*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+  .custom-menu-3 {
+      text-align: left;
+  }
+  .custom-toggle {
+      display: block;
+  }
+  .myMainMenu li a{
+    font-size: 16px;
+  }
+  .subMenu{
+    width: 100%;
+  }
+  .subChangeLayout{
+    background-color: #e1e9ee;
+  }
+  .subChangeLayoutBet{
+    background-color: #f9fafc;
+  }
+  .myContentCell{
+    background-color: white;
+  }
+  .leftAlgolia{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .rightProduct{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .ManualArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .PropsCons{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 37px;
+    padding-right: 37px;
+    position: relative;
+  }
+  .productLayout{
+    padding: 8px;
+  }
+  .ImageArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .SendowlArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .Currency{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .Rating{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .carSpecification table{
+    width: 100%;
+  }
+  .ManualArea table{
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 480px) and (max-device-width: 568px){
+  .custom-menu-3 {
+      text-align: left;
+  }
+  .custom-toggle {
+      display: block;
+  }
+  .myMainMenu li a{
+    font-size: 16px;
+  }
+  .subMenu{
+    width: 100%;
+  }
+  .subChangeLayout{
+    background-color: #e1e9ee;
+  }
+  .subChangeLayoutBet{
+    background-color: #f9fafc;
+  }
+  .myContentCell{
+    background-color: white;
+  }
+  .leftAlgolia{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .rightProduct{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .ManualArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .PropsCons{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 65px;
+    padding-right: 65px;
+    position: relative;
+  }
+  .productLayout{
+    padding: 8px;
+  }
+  .ImageArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .SendowlArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .Currency{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .Rating{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .carSpecification table{
+    width: 100%;
+  }
+  .ManualArea table{
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 568px) and (max-device-width: 667px){
+  .custom-menu-3 {
+      text-align: left;
+  }
+  .custom-toggle {
+      display: block;
+  }
+  .myMainMenu li a{
+    font-size: 16px;
+  }
+  .subMenu{
+    width: 100%;
+  }
+  .subChangeLayout{
+    background-color: #e1e9ee;
+  }
+  .subChangeLayoutBet{
+    background-color: #f9fafc;
+  }
+  .myContentCell{
+    background-color: white;
+  }
+  .leftAlgolia{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .rightProduct{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .ManualArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .PropsCons{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 104px;
+    padding-right: 104px;
+    position: relative;
+  }
+  .productLayout{
+    padding: 8px;
+  }
+  .ImageArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .SendowlArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .Currency{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .Rating{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .carSpecification table{
+    width: 100%;
+  }
+  .ManualArea table{
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 667px) and (max-device-width: 736px){
+  .custom-menu-3 {
+      text-align: left;
+  }
+  .custom-toggle {
+      display: block;
+  }
+  .myMainMenu li a{
+    font-size: 16px;
+  }
+  .subMenu{
+    width: 100%;
+  }
+  .subChangeLayout{
+    background-color: #e1e9ee;
+  }
+  .subChangeLayoutBet{
+    background-color: #f9fafc;
+  }
+  .myContentCell{
+    background-color: white;
+  }
+  .leftAlgolia{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .rightProduct{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .ManualArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .PropsCons{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    position: relative;
+  }
+  .productLayout{
+    padding: 8px;
+  }
+  .ImageArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .SendowlArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .Currency{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .Rating{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .carSpecification table{
+    width: 100%;
+  }
+  .ManualArea table{
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 736px) and (max-device-width: 768px) {
+  .custom-menu-3 {
+      text-align: left;
+  }
+  .custom-toggle {
+      display: block;
+  }
+  .myMainMenu li a{
+    font-size: 16px;
+  }
+  .subMenu{
+    width: 100%;
+  }
+  .subChangeLayout{
+    background-color: #e1e9ee;
+  }
+  .subChangeLayoutBet{
+    background-color: #f9fafc;
+  }
+  .myContentCell{
+    background-color: white;
+  }
+  .leftAlgolia{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .rightProduct{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .ManualArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .PropsCons{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 182px;
+    padding-right: 182px;
+    position: relative;
+  }
+  .productLayout{
+    padding: 8px;
+  }
+  .ImageArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .SendowlArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .Currency{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .Rating{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .carSpecification table{
+    width: 100%;
+  }
+  .ManualArea table{
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 871px) {
+  .custom-menu-3 {
+      text-align: left;
+  }
+  .custom-toggle {
+      display: block;
+  }
+  .myMainMenu li a{
+    font-size: 16px;
+  }
+  .subMenu{
+    width: 100%;
+  }
+  .subChangeLayout{
+    background-color: #e1e9ee;
+  }
+  .subChangeLayoutBet{
+    background-color: #f9fafc;
+  }
+  .myContentCell{
+    background-color: white;
+  }
+  .leftAlgolia{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .rightProduct{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .ManualArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .PropsCons{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+  }
+  .productLayout{
+    padding: 8px;
+  }
+  .ImageArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .SendowlArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .Currency{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .Rating{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .carSpecification table{
+    width: 100%;
+  }
+  .ManualArea table{
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 872px) and (max-device-width: 1366px) {
+  .contentLayout{
+    background-color: white;
+    margin: 0 auto;
+    margin-top: -48px;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+  }
+  .productLayout{
+    padding: 8px;
+  }
+  .carSpecification table{
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1400px) {
+  .contentLayout{
+    background-color: white;
+    margin: 0 auto;
+    margin-top: -48px;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+  }
+  .productLayout{
+    padding: 8px;
+  }
+  .carSpecification table{
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 1400px) and (max-device-width: 1600px) {
+  .contentLayout{
+    background-color: white;
+    margin: 0 auto;
+    margin-top: -48px;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+  }
+  .productLayout{
+    padding: 8px;
+  }
+  .carSpecification table{
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 1600px) and (max-device-width: 1800px) {
+  .contentLayout{
+    background-color: white;
+    margin: 0 auto;
+    margin-top: -48px;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 27px;
+    padding-right: 27px;
+    position: relative;
+  }
+  .productLayout{
+    padding: 8px;
+  }
+  .carSpecification table{
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 1800px) and (max-device-width: 2000px) {
+  .contentLayout{
+    background-color: white;
+    margin: 0 auto;
+    margin-top: -48px;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 62px;
+    padding-right: 62px;
+    position: relative;
+  }
+  .productLayout{
+    padding: 8px;
+  }
+  .carSpecification table{
+    width: 100%;
   }
 }
