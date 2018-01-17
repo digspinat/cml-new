@@ -391,11 +391,11 @@ body {
   z-index: 3;
 }
 .BetMenu{
-  background-color: #f9fafc;
+  background-color: #798690;
   width: 100%;
   top: 110px;
   z-index: 4;
-  height: 200px;
+  height: 80px;
   color: black;
 }
 .subMenu1{
