@@ -2,6 +2,9 @@ body {
     color: #777;
     /*height: 100%;*/
 }
+.MyNavSearch{
+  text-align: right;
+}
 /*Filter CSS*/
 .myPurchase{
   background-color: #7a8690;
@@ -305,8 +308,8 @@ body {
   padding: 8px;
   color: black;
   font-size: 14px;
-  border: 1px solid lightgray;
-  box-shadow: 5px 10px lightgray;
+  /*border: 1px solid lightgray;
+  box-shadow: 5px 10px lightgray;*/
 }
 /*End Product Page Layout CSS*/
 /*Product CSS*/
@@ -437,6 +440,9 @@ body {
   background-color: #7a8690;
 }
 .subChangeLayout{
+  background-color: #7a8690;
+}
+.subChangeLayoutFoot{
   background-color: #7a8690;
 }
 .subChangeLayoutBet{
@@ -772,7 +778,13 @@ body {
     margin-top: -48px;
   }
 }*/
+.MyNavSearch{
+  text-align: right;
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+  .MyNavSearch{
+    text-align: center;
+  }
   .custom-menu-3 {
       text-align: left;
   }
@@ -787,6 +799,9 @@ body {
   }
   .subChangeLayout{
     background-color: #e1e9ee;
+  }
+  .subChangeLayoutFoot{
+    background-color: #181d1e;
   }
   .subChangeLayoutBet{
     background-color: #f9fafc;
@@ -868,6 +883,9 @@ body {
   .subChangeLayout{
     background-color: #e1e9ee;
   }
+  .subChangeLayoutFoot{
+    background-color: #181d1e;
+  }
   .subChangeLayoutBet{
     background-color: #f9fafc;
   }
@@ -947,6 +965,9 @@ body {
   }
   .subChangeLayout{
     background-color: #e1e9ee;
+  }
+  .subChangeLayoutFoot{
+    background-color: #181d1e;
   }
   .subChangeLayoutBet{
     background-color: #f9fafc;
@@ -1028,6 +1049,9 @@ body {
   .subChangeLayout{
     background-color: #e1e9ee;
   }
+  .subChangeLayoutFoot{
+    background-color: #181d1e;
+  }
   .subChangeLayoutBet{
     background-color: #f9fafc;
   }
@@ -1108,6 +1132,9 @@ body {
   .subChangeLayout{
     background-color: #e1e9ee;
   }
+  .subChangeLayoutFoot{
+    background-color: #181d1e;
+  }
   .subChangeLayoutBet{
     background-color: #f9fafc;
   }
@@ -1187,6 +1214,9 @@ body {
   }
   .subChangeLayout{
     background-color: #e1e9ee;
+  }
+  .subChangeLayoutFoot{
+    background-color: #181d1e;
   }
   .subChangeLayoutBet{
     background-color: #f9fafc;

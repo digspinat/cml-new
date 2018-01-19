@@ -12,23 +12,15 @@
                   <a href="{{.Permalink}}"><img src="{{.Params.catimage}}" class="pure-img-responsive" alt=""></a>
                 </div>
                 <div class="productDesc">
-                  <a href="{{.Permalink}}">{{.Params.manualname}}</a><br>
-                  Rating: {{ $empty := sub 5 .Params.overallrate }}
-                  {{range seq .Params.overallrate}}
-                    <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
-                  {{end}}
-                  {{range seq $empty}}
-                    <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
-                  {{end}}
-                  <ul>
-                      <li>Make: {{.Params.makes}}</li>
-                      <li>Series: {{.Params.series}}</li>
-                      <li>Subseries: {{.Params.subseries}}</li>
-                      <li>Platform: {{.Params.platform}}</li>
-                      <li>Year: {{.Params.years}}</li>
-                  </ul>
-
-                  <a href="{{.Permalink}}" class="ProductBorderButton">Price: {{.Params.sendowlprice}}</a>
+                  <a href="{{.Permalink}}">{{ .Params.cptitle | markdownify }}</a>
+                  <div class="">
+                    <p style="float:left;font-weight:bold;">
+                      Price: {{.Params.sendowlprice}}
+                    </p>
+                    <p style="float:right;">
+                      <a href="{{.Permalink}}" class="ProductBorderButton">More Info</a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

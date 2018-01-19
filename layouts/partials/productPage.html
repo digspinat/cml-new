@@ -1,11 +1,25 @@
 <div class="mainContentLayout">
-  <div class="productLayout">
-      <h3 class="productTitle">{{.Title}}</h3>
+  <div class="productLayout" style="margin-top:20px;">
+      <!-- <h3 class="productTitle">{{.Title}}</h3> -->
       <div class="productImageArea">
         <div class="ImageArea">
           <img src="{{.Params.proimage}}" class="pure-img-responsive" alt="">
         </div>
         <div class="SendowlArea" style="">
+          <!-- <div class="CurrencyArea">
+              <h4 class="productTitle"><span class="BlueText">Over all Rating: </span>
+                {{ $empty := sub 5 .Params.overallrate }}
+                {{range seq .Params.overallrate}}
+                  <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                {{end}}
+                {{range seq $empty}}
+                  <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                {{end}}
+              </h4>
+          </div> -->
+          <div class="CurrencyArea">
+            <h3 class="productTitle">{{.Params.cptitle}}</h3>
+          </div>
           <div class="CurrencyArea">
               <h4 class="productTitle"><span class="BlueText">Over all Rating: </span>
                 {{ $empty := sub 5 .Params.overallrate }}
@@ -18,17 +32,14 @@
               </h4>
           </div>
           <div class="CurrencyArea">
-            <h3 class="productTitle">{{.Title}}</h3>
-          </div>
-          <div class="CurrencyArea">
             <div class="Currency" style="margin-top:0px;">
-              <h4 class="productTitle"><span class="BlueText">Price: </span>{{.Params.sendowlprice}}</h4>
+              <h4 style="margin:0;padding:0;" class="productTitle"><span class="BlueText" style="font-size:larger;">Price: </span>{{.Params.sendowlprice}}</h4>
             </div>
-            <div class="Rating" style="color:black;">
-              <h4 class=""><span class="BlueText">Manual Status: </span>{{.Params.manualstatus}}</h4>
+            <div class="Rating" style="color:black;margin-top:0px;">
+              <h4 style="margin:0;padding:0;" class="productTitle"><span class="BlueText" style="font-size:larger;">Manual Status: </span>{{.Params.manualstatus}}</h4>
             </div>
           </div>
-          <div class="sendOwl">
+          <div class="sendOwl" style="clear:both;">
             {{.Params.sendowl | safeHTML }}
           </div>
           <div class="addToCart">
@@ -119,7 +130,7 @@
 </div>
 <div class="ManArea" style="margin-top:20px;">
   <div class="productLayout">
-    <h3 class="BlueText">Description</h3>
+    <h3 class="BlueText">{{.Title}}</h3>
     <div class="ManualDescription">
       {{.Params.manualdescription | markdownify}}
     </div>
@@ -144,13 +155,65 @@
 <div class="ManArea" style="margin-top:20px;">
   <div class="productLayout">
     <div class="MannProp">
-        <h3 class="BlueText">Manual Reviews</h3>
+        <h3 class="BlueText">Customer Reviews</h3>
         {{range .Params.manualreview}}
           <div class="ReviewBox">
-            <p style="float:left;"><strong>{{.reviewItemNickname}}</strong></p>
-            <p style="float:right;"><strong>Rating:</strong>{{.reviewItemRating}}</p>
-            <p style="clear:both;"><strong>Title:</strong>{{.reviewItemTitle}}</p>
-            <p><strong>Message:</strong>{{.reviewItemDescr | markdownify}}</p>
+            <p><strong>{{.reviewItemNickname}}</strong></p>
+            <h4 style="clear:both;" class="productTitle"><span class="BlueText">Rating: </span>
+              {{ $myempty := sub 5 .reviewItemRating }}
+              {{if eq $myempty 0}}
+                <!-- <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span> -->
+              {{end}}
+              {{if eq .reviewItemRating 1}}
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+              {{end}}
+              {{if eq .reviewItemRating 2}}
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+              {{end}}
+              {{if eq .reviewItemRating 3}}
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+              {{end}}
+              {{if eq .reviewItemRating 4}}
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+              {{end}}
+              {{if eq .reviewItemRating 5}}
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+              {{end}}
+              {{if eq $myempty 1}}
+                <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+              {{end}}
+              {{if eq $myempty 2}}
+                <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+              {{end}}
+              {{if eq $myempty 3}}
+                <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+              {{end}}
+              {{if eq $myempty 4}}
+                <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+              {{end}}
+              {{if eq $myempty 5}}
+                <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+              {{end}}
+            </h4>
+            <p><strong>Date:</strong>{{.reviewItemDate}}</p>
           </div>
         {{end}}
     </div>

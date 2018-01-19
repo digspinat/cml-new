@@ -12,6 +12,7 @@
 .gallery img {
   width: 100%;
   height: auto;
+  margin: 10px;
 }
 .gallery figure {
   display: block;

@@ -1,5 +1,5 @@
 module.exports = (dato, root, i18n) => {
-  // console.log(dato.manuals);
+  console.log(dato.manuals);
   root.directory("content/manuals", (dir) => {
     dato.manuals.forEach((manuals) => {
         dir.createPost(`${manuals.currencyUrl}.${manuals.manualCurrency}.md`, "yaml", {
@@ -38,7 +38,8 @@ module.exports = (dato, root, i18n) => {
             mspages: manuals.manualSpecs.msPages,
             mstype: manuals.manualSpecs.msType,
             manualporp: manuals.propCons.pro,
-            manualcons: manuals.propCons.con
+            manualcons: manuals.propCons.con,
+            cptitle: manuals.manualTitleCp
           },
           content: manuals.partialPreview.previewDesc
         });
