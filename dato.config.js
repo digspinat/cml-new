@@ -61,8 +61,8 @@ module.exports = (dato, root, i18n) => {
       // content['platform'] = JSON.parse(Manuals.carSpecs.algoliaPlatform);
       // content['years'] = JSON.parse(Manuals.carSpecs.csAlgoliaYears);
       try {
-        content['platform'] = parser.parse(Manuals.carSpecs.algoliaPlatform);
-        content['algoliaPlatform'] = parser.parse(Manuals.carSpecs.algoliaPlatform);
+        content['platform'] = JSON.parse(Manuals.carSpecs.algoliaPlatform);
+        content['algoliaPlatform'] = JSON.parse(Manuals.carSpecs.algoliaPlatform);
       } catch (e) {
         console.log(e);
       } finally {
