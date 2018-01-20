@@ -1,5 +1,5 @@
 module.exports = (dato, root, i18n) => {
-  console.log(dato.manuals);
+  // console.log(dato.manuals);
   root.directory("content/manuals", (dir) => {
     dato.manuals.forEach((manuals) => {
         dir.createPost(`${manuals.currencyUrl}.${manuals.manualCurrency}.md`, "yaml", {
