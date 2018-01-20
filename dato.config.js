@@ -58,19 +58,16 @@ module.exports = (dato, root, i18n) => {
       content['make'] = Manuals.carSpecs.cpMake;
       content['series'] = Manuals.carSpecs.cpSerie;
       content['subseries'] = Manuals.carSpecs.cpSubSerie;
-      // content['platform'] = JSON.parse(Manuals.carSpecs.algoliaPlatform);
-      // content['years'] = JSON.parse(Manuals.carSpecs.csAlgoliaYears);
-      try {
-        content['platform'] = JSON.parse(Manuals.carSpecs.algoliaPlatform);
-        content['algoliaPlatform'] = JSON.parse(Manuals.carSpecs.algoliaPlatform);
-      } catch (e) {
-        console.log(e);
-      } finally {
-        console.log("");
-      }
-      // content['algoliaPlatform'] = JSON.parse(Manuals.carSpecs.algoliaPlatform);
-      // content['algoliaYear'] = JSON.parse(Manuals.carSpecs.csAlgoliaYears);
-      // content['algoliaYear'] = Manuals.carSpecs.ye;
+      console.log(JSON.parse(Manuals.carSpecs.algoliaPlatform));
+      console.log(JSON.parse(Manuals.carSpecs.csAlgoliaYears));
+      // try {
+      //   content['platform'] = Manuals.carSpecs.algoliaPlatform;
+      //   content['algoliaPlatform'] = Manuals.carSpecs.csAlgoliaYears;
+      // } catch (e) {
+      //   console.log(e);
+      // } finally {
+      //   console.log("");
+      // }
       content['bodytype'] = Manuals.carSpecs.cpBodyType;
       content['fueltype'] = Manuals.carSpecs.cpFuelType;
       content['title'] = Manuals.manualTitle;
