@@ -1,4 +1,4 @@
-var parser = require('json-parser');
+var $ = require("jquery");
 
 module.exports = (dato, root, i18n) => {
   // console.log(dato.manuals);
@@ -58,8 +58,10 @@ module.exports = (dato, root, i18n) => {
       content['make'] = Manuals.carSpecs.cpMake;
       content['series'] = Manuals.carSpecs.cpSerie;
       content['subseries'] = Manuals.carSpecs.cpSubSerie;
-      console.log(JSON.parse(Manuals.carSpecs.algoliaPlatform));
-      console.log(JSON.parse(Manuals.carSpecs.csAlgoliaYears));
+      var a = JSON.parse(Manuals.carSpecs.algoliaPlatform.toString().trim());
+      console.log(a[0]);
+      // console.log($.parseJSON(Manuals.carSpecs.algoliaPlatform));
+      // console.log($.parseJSON(Manuals.carSpecs.csAlgoliaYears));
       // try {
       //   content['platform'] = Manuals.carSpecs.algoliaPlatform;
       //   content['algoliaPlatform'] = Manuals.carSpecs.csAlgoliaYears;

@@ -20,6 +20,7 @@
     "datocms-client": "^0.3.41"
   },
   "dependencies": {
+    "jquery": "^3.3.0",
     "json-parser": "^1.1.5"
   }
 }
