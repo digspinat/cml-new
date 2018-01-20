@@ -442,6 +442,9 @@ body {
 .subChangeLayout{
   background-color: #7a8690;
 }
+.subChangeLayoutFoot{
+  background-color: #7a8690;
+}
 .subChangeLayoutBet{
   background-color: #7a8690;
 }
@@ -797,6 +800,9 @@ body {
   .subChangeLayout{
     background-color: #e1e9ee;
   }
+  .subChangeLayoutFoot{
+    background-color: #181d1e;
+  }
   .subChangeLayoutBet{
     background-color: #f9fafc;
   }
@@ -876,6 +882,9 @@ body {
   }
   .subChangeLayout{
     background-color: #e1e9ee;
+  }
+  .subChangeLayoutFoot{
+    background-color: #181d1e;
   }
   .subChangeLayoutBet{
     background-color: #f9fafc;
@@ -957,6 +966,9 @@ body {
   .subChangeLayout{
     background-color: #e1e9ee;
   }
+  .subChangeLayoutFoot{
+    background-color: #181d1e;
+  }
   .subChangeLayoutBet{
     background-color: #f9fafc;
   }
@@ -1036,6 +1048,9 @@ body {
   }
   .subChangeLayout{
     background-color: #e1e9ee;
+  }
+  .subChangeLayoutFoot{
+    background-color: #181d1e;
   }
   .subChangeLayoutBet{
     background-color: #f9fafc;
@@ -1117,6 +1132,9 @@ body {
   .subChangeLayout{
     background-color: #e1e9ee;
   }
+  .subChangeLayoutFoot{
+    background-color: #181d1e;
+  }
   .subChangeLayoutBet{
     background-color: #f9fafc;
   }
@@ -1196,6 +1214,9 @@ body {
   }
   .subChangeLayout{
     background-color: #e1e9ee;
+  }
+  .subChangeLayoutFoot{
+    background-color: #181d1e;
   }
   .subChangeLayoutBet{
     background-color: #f9fafc;

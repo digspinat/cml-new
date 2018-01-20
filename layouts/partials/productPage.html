@@ -18,10 +18,10 @@
               </h4>
           </div> -->
           <div class="CurrencyArea">
-            <h3 class="productTitle">{{.Params.cptitle}}</h3>
+            <div class="productTitle" style="margin-top:21px;font-weight:bold;">{{.Params.cptitle | markdownify}}</div>
           </div>
           <div class="CurrencyArea">
-              <h4 class="productTitle"><span class="BlueText">Over all Rating: </span>
+              <h4 class="productTitle"><span class="BlueText"></span>
                 {{ $empty := sub 5 .Params.overallrate }}
                 {{range seq .Params.overallrate}}
                   <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
@@ -33,10 +33,10 @@
           </div>
           <div class="CurrencyArea">
             <div class="Currency" style="margin-top:0px;">
-              <h4 style="margin:0;padding:0;" class="productTitle"><span class="BlueText" style="font-size:larger;">Price: </span>{{.Params.sendowlprice}}</h4>
+              <h4 style="margin:0;padding:0;" class="productTitle"><span class="BlueText" style="font-size:larger;">{{.Params.sendowlprice}}</span></h4>
             </div>
             <div class="Rating" style="color:black;margin-top:0px;">
-              <h4 style="margin:0;padding:0;" class="productTitle"><span class="BlueText" style="font-size:larger;">Manual Status: </span>{{.Params.manualstatus}}</h4>
+              <h4 style="margin:0;padding:0;" class="productTitle"><span class="BlueText" style="font-size:larger;">{{.Params.manualstatus}}</span></h4>
             </div>
           </div>
           <div class="sendOwl" style="clear:both;">
@@ -159,7 +159,7 @@
         {{range .Params.manualreview}}
           <div class="ReviewBox">
             <p><strong>{{.reviewItemNickname}}</strong></p>
-            <h4 style="clear:both;" class="productTitle"><span class="BlueText">Rating: </span>
+            <h4 style="clear:both;" class="productTitle">
               {{ $myempty := sub 5 .reviewItemRating }}
               {{if eq $myempty 0}}
                 <!-- <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span> -->
@@ -212,8 +212,10 @@
                 <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
                 <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
               {{end}}
+              <span class="BlueText">{{.reviewItemTitle}}</span>
             </h4>
-            <p><strong>Date:</strong>{{.reviewItemDate}}</p>
+            <p>{{.reviewItemDate}}</p>
+            <p>{{.reviewItemDescr | markdownify}}</p>
           </div>
         {{end}}
     </div>

@@ -12,12 +12,15 @@
 .gallery img {
   width: 100%;
   height: auto;
-  margin: 10px;
+  margin-left: 10px;
+}
+.gallery p {
+  display: none;
 }
 .gallery figure {
   display: block;
   float: left;
-  margin: 0 5px 5px 0;
+  margin: 5px 5px 5px 5px;
 }
 .gallery figcaption {
   display: none;
