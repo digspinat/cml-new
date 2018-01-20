@@ -10,18 +10,18 @@
         <div class="pure-g" style="padding:20px;">
             <div class="pure-u-1 pure-u-md-1-3">
               <h4><span class="BlueText">Car Makes</h4>
-                <div class="pure-menu custom-restricted-width">
-                    <ul class="pure-menu-list">
+                <div class="pure-menu custom-restricted-width CarMakes">
+                    <ul>
                       {{ $gistJ := getJSON "/data/makes.json" }}
                       {{$myLang := .Lang}}
                       {{ if eq $myLang "usd"}}
                       {{ range $gistJ }}
-                        <li class="pure-menu-item"><a href="/makes/{{.url}}" class="pure-menu-link">{{.make}}</a></li>
+                        <li><a href="/makes/{{.url}}">{{.make}}</a></li>
                       <!-- <li class="pure-menu-item subMenuItem"><a href="/makes/{{.url}}" class="pure-menu-link myElement">{{.make}}</a></li> -->
                       {{end}}
                       {{else}}
                       {{ range $gistJ }}
-                        <li class="pure-menu-item"><a href="/{{$myLang}}/makes/{{.url}}" class="pure-menu-link">{{.make}}</a></li>
+                        <li><a href="/{{$myLang}}/makes/{{.url}}">{{.make}}</a></li>
                       {{end}}
                       {{end}}
                     </ul>
@@ -29,11 +29,11 @@
             </div>
             <div class="pure-u-1 pure-u-md-1-3">
               <h4><span class="BlueText">Quick Links</h4>
-                <div class="pure-menu custom-restricted-width">
-                    <ul class="pure-menu-list">
+                <div class="pure-menu custom-restricted-width CarMakes">
+                    <ul>
                       {{ range .Site.Pages.ByWeight }}
                         {{ if eq .Type "mypage" }}
-                          <li class="pure-menu-item"><a href="{{.Permalink}}" class="pure-menu-link">{{.Title}}</a></li>
+                          <li><a href="{{.Permalink}}">{{.Title}}</a></li>
                         {{ end }}
                       {{ end }}
                     </ul>

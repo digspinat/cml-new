@@ -5,6 +5,31 @@ body {
 .MyNavSearch{
   text-align: right;
 }
+/*Footer Menu*/
+.CarMakes ul {
+  list-style: none;
+  padding: 0;
+}
+.CarMakes ul li {
+  padding-left: 1.3em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.CarMakes ul li a{
+  color: white;
+}
+.CarMakes ul li a:hover{
+  text-decoration: none;
+  font-size: 17px;
+}
+.CarMakes ul li:before {
+  content: "\f054"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.4em; /* same as padding-left set on li */
+}
+/*End Footer Menu*/
 /*Filter CSS*/
 .myPurchase{
   background-color: #7a8690;
