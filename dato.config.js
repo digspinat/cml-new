@@ -1,5 +1,5 @@
 var $ = require("jquery");
-const json = '{\n\t"foo": true\n}';
+const json = '{"foo": true}';
 console.log(JSON.parse(json));
 module.exports = (dato, root, i18n) => {
   // console.log(dato.manuals);
