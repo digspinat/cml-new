@@ -58,7 +58,7 @@ module.exports = (dato, root, i18n) => {
       content['make'] = Manuals.carSpecs.cpMake;
       content['series'] = Manuals.carSpecs.cpSerie;
       content['subseries'] = Manuals.carSpecs.cpSubSerie;
-      var a = JSON.parse(Manuals.carSpecs.algoliaPlatform.trim());
+      var a = JSON.parse(Manuals.carSpecs.algoliaPlatform.toString());
       console.log(a[0]);
       // console.log($.parseJSON(Manuals.carSpecs.algoliaPlatform));
       // console.log($.parseJSON(Manuals.carSpecs.csAlgoliaYears));
