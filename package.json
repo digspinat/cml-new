@@ -18,5 +18,8 @@
   "homepage": "https://github.com/digspinat/cml-new#readme",
   "devDependencies": {
     "datocms-client": "^0.3.41"
+  },
+  "dependencies": {
+    "json-parser": "^1.1.5"
   }
 }

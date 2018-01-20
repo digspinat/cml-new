@@ -3,10 +3,9 @@
     "make": "Audi",
     "series": "A4",
     "subseries": "--",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -27,10 +26,9 @@
     "make": "Audi",
     "series": "Q5",
     "subseries": "--",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -51,10 +49,9 @@
     "make": "Audi",
     "series": "TT",
     "subseries": "--",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -75,10 +72,9 @@
     "make": "BMW",
     "series": "5 Serie",
     "subseries": "--",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -99,10 +95,9 @@
     "make": "BMW",
     "series": "X-Serie",
     "subseries": "X5",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -123,10 +118,9 @@
     "make": "Mercedes",
     "series": "M-Class",
     "subseries": "ML",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -147,10 +141,9 @@
     "make": "BMW",
     "series": "3 Serie",
     "subseries": "--",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -171,10 +164,9 @@
     "make": "BMW",
     "series": "3-Series",
     "subseries": "--",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -195,10 +187,9 @@
     "make": "BMW",
     "series": "X-Serie",
     "subseries": "X5",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -219,10 +210,9 @@
     "make": "BMW",
     "series": "X-Serie",
     "subseries": "X5",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -243,10 +233,9 @@
     "make": "BMW",
     "series": "X-Serie",
     "subseries": "X5",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -267,10 +256,9 @@
     "make": "BMW",
     "series": "X-Serie",
     "subseries": "X5",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -291,10 +279,9 @@
     "make": "BMW",
     "series": "X-Serie",
     "subseries": "X5",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -315,10 +302,9 @@
     "make": "BMW",
     "series": "X-Serie",
     "subseries": "X5",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -339,10 +325,9 @@
     "make": "BMW",
     "series": "X-Serie",
     "subseries": "X5",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -363,10 +348,9 @@
     "make": "BMW",
     "series": "X-Serie",
     "subseries": "X5",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -387,10 +371,9 @@
     "make": "BMW",
     "series": "X-Serie",
     "subseries": "X5",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -411,10 +394,9 @@
     "make": "BMW",
     "series": "X-Serie",
     "subseries": "X5",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",
@@ -435,10 +417,9 @@
     "make": "Mercedes",
     "series": "M-Class",
     "subseries": "ML",
-    "years": [
-      "smartphone",
-      "phonnnnne",
-      "eleeeeectronics"
+    "platform": [
+      "E70",
+      "E80"
     ],
     "algoliaPlatform": [
       "E70",

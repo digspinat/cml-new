@@ -1,3 +1,5 @@
+var parser = require('json-parser');
+
 module.exports = (dato, root, i18n) => {
   // console.log(dato.manuals);
   root.directory("content/manuals", (dir) => {
@@ -57,13 +59,9 @@ module.exports = (dato, root, i18n) => {
       content['series'] = Manuals.carSpecs.cpSerie;
       content['subseries'] = Manuals.carSpecs.cpSubSerie;
       // content['platform'] = JSON.parse(Manuals.carSpecs.algoliaPlatform);
-      var a = Manuals.carSpecs.csAlgoliaYears;
-      a = a.replace(/'/g, '"');
-      content['years'] = JSON.parse(a);
       // content['years'] = JSON.parse(Manuals.carSpecs.csAlgoliaYears);
-      var b = Manuals.carSpecs.algoliaPlatform;
-      b = b.replace(/'/g, '"');
-      content['algoliaPlatform'] = JSON.parse(b);
+      content['platform'] = parser.parse(Manuals.carSpecs.algoliaPlatform);
+      content['algoliaPlatform'] = parser.parse(Manuals.carSpecs.algoliaPlatform);
       // content['algoliaPlatform'] = JSON.parse(Manuals.carSpecs.algoliaPlatform);
       // content['algoliaYear'] = JSON.parse(Manuals.carSpecs.csAlgoliaYears);
       // content['algoliaYear'] = Manuals.carSpecs.ye;
