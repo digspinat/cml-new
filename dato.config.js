@@ -63,7 +63,10 @@ module.exports = (dato, root, i18n) => {
       var years = Manuals.carSpecs.csAlgoliaYears;
       platform = JSON.stringify(platform);
       var platform1 = JSON.parse(platform);
-      console.log(platform1[0]);
+      years = JSON.stringify(years);
+      var years1 = JSON.parse(years);
+      content['platform'] = platform1;
+      content['years'] = years1;
       content['bodytype'] = Manuals.carSpecs.cpBodyType;
       content['fueltype'] = Manuals.carSpecs.cpFuelType;
       content['title'] = Manuals.manualTitle;
