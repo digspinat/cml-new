@@ -1,6 +1,6 @@
 var $ = require("jquery");
 const json = '{"foo": true}';
-console.log(JSON.parse(json));
+// console.log(JSON.parse(json));
 module.exports = (dato, root, i18n) => {
   // console.log(dato.manuals);
   root.directory("content/manuals", (dir) => {
@@ -59,8 +59,10 @@ module.exports = (dato, root, i18n) => {
       content['make'] = Manuals.carSpecs.cpMake;
       content['series'] = Manuals.carSpecs.cpSerie;
       content['subseries'] = Manuals.carSpecs.cpSubSerie;
-      content['platform'] = JSON.parse(Manuals.carSpecs.algoliaPlatform);
-      content['years'] = JSON.parse(Manuals.carSpecs.csAlgoliaYears);
+      var platform = Manuals.carSpecs.algoliaPlatform;
+      var years = Manuals.carSpecs.csAlgoliaYears;
+      console.log(platform);
+      console.log(years);
       content['bodytype'] = Manuals.carSpecs.cpBodyType;
       content['fueltype'] = Manuals.carSpecs.cpFuelType;
       content['title'] = Manuals.manualTitle;
