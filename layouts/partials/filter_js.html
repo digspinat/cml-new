@@ -120,6 +120,12 @@
 });
 $(document).on('click','.mySearch',function(){
   if(this.checked){
+    var myTx = ""
+    $(".searchInput").each(function() {
+      if($(this).val() !== ""){
+        myTx = $(this).val()
+      }
+    });
     var MainSearch = []
     var BrandSearch = [], BrandArray = [];
     var SeriesSearch = [], SeriesArray = [];
@@ -179,7 +185,7 @@ $(document).on('click','.mySearch',function(){
     MainSearch.push(PlatformSearch);
     MainSearch.push(Currency);
     index.search({
-      query: '*',
+      query: myTx,
       hitsPerPage: 9,
       facetFilters: MainSearch,
       facets: ['make','series','subseries','years','platform']
@@ -271,6 +277,14 @@ $(document).on('click','.mySearch',function(){
     });
   }else{
     $(this).removeAttr( "checked" )
+
+    var myTx = ""
+    $(".searchInput").each(function() {
+      if($(this).val() !== ""){
+        myTx = $(this).val()
+      }
+    });
+
     var MainSearch = []
     var BrandSearch = [], BrandArray = [];
     var SeriesSearch = [], SeriesArray = [];
@@ -331,7 +345,7 @@ $(document).on('click','.mySearch',function(){
     MainSearch.push(Currency);
 
     index.search({
-      query: '*',
+      query: myTx,
       hitsPerPage: 9,
       facetFilters: MainSearch,
       facets: ['make','series','subseries','years','platform']

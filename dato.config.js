@@ -1,5 +1,6 @@
 var $ = require("jquery");
-
+const json = '{\n\t"foo": true\n}';
+console.log(JSON.parse(json));
 module.exports = (dato, root, i18n) => {
   // console.log(dato.manuals);
   root.directory("content/manuals", (dir) => {
@@ -69,7 +70,8 @@ module.exports = (dato, root, i18n) => {
       content['manualname'] = Manuals.manualName;
       content['currency'] = Manuals.manualCurrency;
       content['price'] = Manuals.manualSendowl.soPrice;
-      content['rate'] = Manuals.review.revOverallRating
+      content['rate'] = Manuals.review.revOverallRating;
+      content['cptitle'] = Manuals.manualTitleCp
       myall.push(content)
       if(j == 1){
         checkbrand.push(Manuals.carSpecs.cpMake);

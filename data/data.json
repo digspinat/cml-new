@@ -4,8 +4,8 @@
     "series": "A4",
     "subseries": "--",
     "platform": [
-      "F70",
-      "F80"
+      "E70",
+      "E80"
     ],
     "years": [
       "smartphone",
@@ -21,7 +21,8 @@
     "manualname": "USD 103006 | Audi A4 B8 - 8K | Service & repair manual | 2008 - 2014 | ",
     "currency": "usd",
     "price": "19.95",
-    "rate": 5
+    "rate": 5,
+    "cptitle": "USD 103006 | Audi A4 B8 - 8K | Service & repair manual | 2008 - 2014 | "
   },
   {
     "make": "Audi",
@@ -45,7 +46,8 @@
     "manualname": "USD 103005 | Audi Q5 (8R) |Repair & service manual | 2009 - 2017 ",
     "currency": "aud",
     "price": "19.95",
-    "rate": 4
+    "rate": 4,
+    "cptitle": "USD 103005 | Audi Q5 (8R) |Repair & service manual | 2009 - 2017 "
   },
   {
     "make": "Audi",
@@ -69,7 +71,8 @@
     "manualname": "USD 103004 | Audi TT (MK2) Workshop manual (8J) | 2006 - 2014 Roadster + Coupe ",
     "currency": "usd",
     "price": "19.95",
-    "rate": 5
+    "rate": 5,
+    "cptitle": "USD 103004 | Audi TT (MK2) Workshop manual (8J) | 2006 - 2014 Roadster + Coupe "
   },
   {
     "make": "BMW",
@@ -93,7 +96,8 @@
     "manualname": "USD 103003 | BMW  5 series | Service & repair manual |E60 (saloon) E61(wagon) | 2003 -2010",
     "currency": "usd",
     "price": "19.95",
-    "rate": 4
+    "rate": 4,
+    "cptitle": "USD 103003 | BMW  5 series | Service & repair manual |E60 (saloon) E61(wagon) | 2003 -2010"
   },
   {
     "make": "BMW",
@@ -117,7 +121,8 @@
     "manualname": " 103001 CAD| BMW X5 (E70) | Service & repair manual | 2006 - 2013",
     "currency": "cad",
     "price": "24.95",
-    "rate": 5
+    "rate": 5,
+    "cptitle": " 103001 CAD| BMW X5 (E70) | Service & repair manual | 2006 - 2013"
   },
   {
     "make": "Mercedes",
@@ -141,7 +146,8 @@
     "manualname": "103002 AUD | Mercedes Benz (M-Class) ML (W163) | Service  & repair manual |1997 - 2005 | Petrol & diesel",
     "currency": "aud",
     "price": "24.95",
-    "rate": 4
+    "rate": 4,
+    "cptitle": "103002 AUD | Mercedes Benz (M-Class) ML (W163) | Service  & repair manual |1997 - 2005 | Petrol & diesel"
   },
   {
     "make": "BMW",
@@ -165,7 +171,8 @@
     "manualname": "USD 103007 | BMW E46 (3 Series) | Service & repair manual | 1999 -2005",
     "currency": "usd",
     "price": "19.95",
-    "rate": 5
+    "rate": 5,
+    "cptitle": "USD 103007 | BMW E46 (3 Series) | Service & repair manual | 1999 -2005"
   },
   {
     "make": "BMW",
@@ -189,7 +196,8 @@
     "manualname": "USD 103008 | BMW E90/E91/E92/E93/ Service and repair manual | 2004-2013",
     "currency": "usd",
     "price": "19.95",
-    "rate": 4
+    "rate": 4,
+    "cptitle": "USD 103008 | BMW E90/E91/E92/E93/ Service and repair manual | 2004-2013"
   },
   {
     "make": "BMW",
@@ -213,7 +221,8 @@
     "manualname": "103001 USD | BMW X5 (E70) | Service & repair manual | 2006 - 2013",
     "currency": "usd",
     "price": "19.95",
-    "rate": 5
+    "rate": 5,
+    "cptitle": "BMW X5 (E70)\n\n2006 - 2013\n\nService & repair manual\n"
   },
   {
     "make": "BMW",
@@ -237,7 +246,8 @@
     "manualname": "103001 EUR | BMW X5 (E70) | Service & repair manual | 2006 - 2013 ",
     "currency": "eur",
     "price": "16.50",
-    "rate": 5
+    "rate": 5,
+    "cptitle": "103001 EUR | BMW X5 (E70) | Service & repair manual | 2006 - 2013 "
   },
   {
     "make": "BMW",
@@ -261,7 +271,8 @@
     "manualname": "103001 GBP | BMW X5 (E70) | Service & repair manual | 2006 - 2013 ",
     "currency": "gbp",
     "price": "14.50",
-    "rate": 5
+    "rate": 5,
+    "cptitle": "103001 GBP | BMW X5 (E70) | Service & repair manual | 2006 - 2013 "
   },
   {
     "make": "BMW",
@@ -285,7 +296,8 @@
     "manualname": "103001 NZD | BMW X5 (E70) | Service & repair manual | 2006 - 2013 ",
     "currency": "nzd",
     "price": "27.50",
-    "rate": 5
+    "rate": 5,
+    "cptitle": "103001 NZD | BMW X5 (E70) | Service & repair manual | 2006 - 2013 "
   },
   {
     "make": "BMW",
@@ -309,7 +321,8 @@
     "manualname": "103001 HKD | BMW X5 (E70) | Service & repair manual | 2006 - 2013 ",
     "currency": "hkd",
     "price": "156",
-    "rate": 5
+    "rate": 5,
+    "cptitle": "103001 HKD | BMW X5 (E70) | Service & repair manual | 2006 - 2013 "
   },
   {
     "make": "BMW",
@@ -333,7 +346,8 @@
     "manualname": "103001 CHF| BMW X5 (E70) | Service & repair manual | 2006 - 2013 ",
     "currency": "chf",
     "price": "19.50",
-    "rate": 5
+    "rate": 5,
+    "cptitle": "103001 CHF| BMW X5 (E70) | Service & repair manual | 2006 - 2013 "
   },
   {
     "make": "BMW",
@@ -357,7 +371,8 @@
     "manualname": "103001 ZAR | BMW X5 (E70) | Service & repair manual | 2006 - 2013 ",
     "currency": "zar",
     "price": "249",
-    "rate": 5
+    "rate": 5,
+    "cptitle": "103001 ZAR | BMW X5 (E70) | Service & repair manual | 2006 - 2013 "
   },
   {
     "make": "BMW",
@@ -381,7 +396,8 @@
     "manualname": "103001 INR | BMW X5 (E70) | Service & repair manual | 2006 - 2013 ",
     "currency": "inr",
     "price": "1269",
-    "rate": 5
+    "rate": 5,
+    "cptitle": "103001 INR | BMW X5 (E70) | Service & repair manual | 2006 - 2013 "
   },
   {
     "make": "BMW",
@@ -405,7 +421,8 @@
     "manualname": "103001 SGD | BMW X5 (E70) | Service & repair manual | 2006 - 2013 ",
     "currency": "sgd",
     "price": "26.50",
-    "rate": 5
+    "rate": 5,
+    "cptitle": "103001 SGD | BMW X5 (E70) | Service & repair manual | 2006 - 2013 "
   },
   {
     "make": "BMW",
@@ -429,7 +446,8 @@
     "manualname": "103001 AUD | BMW X5 (E70) | Service & repair manual | 2006 - 2013 ",
     "currency": "aud",
     "price": "24.95",
-    "rate": 5
+    "rate": 5,
+    "cptitle": "BMW X5 (E70)\n\n2006 - 2013\n\nService & repair manual\n"
   },
   {
     "make": "Mercedes",
@@ -453,6 +471,7 @@
     "manualname": "103002 USD | Mercedes Benz (M-Class) ML (W163) | Service  & repair manual |1997 - 2005 | Petrol & diesel",
     "currency": "usd",
     "price": "19.95",
-    "rate": 4
+    "rate": 4,
+    "cptitle": "Mercedes Benz (M-Class) ML (W163)\n\n1997 - 2005\n\nService  & repair manual\n\nPetrol & diesel"
   }
 ]
