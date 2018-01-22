@@ -415,13 +415,13 @@ body {
   background-color: #e1e9ee;
   position: fixed;
   width: 100%;
-  top: 110px;
+  top: 108px;
   z-index: 3;
 }
 .BetMenu{
   background-color: #798690;
   width: 100%;
-  top: 110px;
+  top: 108px;
   z-index: 4;
   height: 80px;
   color: black;
@@ -509,7 +509,7 @@ body {
 .custom-wrapper {
   margin-bottom: 1em;
   -webkit-font-smoothing: antialiased;
-  height: 2.78em;
+  height: 43px;
   overflow: hidden;
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
@@ -813,6 +813,9 @@ body {
   .custom-menu-3 {
       text-align: left;
   }
+  .MyNavSearch{
+    text-align: center;
+  }
   .custom-toggle {
       display: block;
   }
@@ -895,6 +898,9 @@ body {
 @media only screen and (min-device-width: 480px) and (max-device-width: 568px){
   .custom-menu-3 {
       text-align: left;
+  }
+  .MyNavSearch{
+    text-align: center;
   }
   .custom-toggle {
       display: block;
@@ -979,6 +985,9 @@ body {
   .custom-menu-3 {
       text-align: left;
   }
+  .MyNavSearch{
+    text-align: center;
+  }
   .custom-toggle {
       display: block;
   }
@@ -1061,6 +1070,9 @@ body {
 @media only screen and (min-device-width: 667px) and (max-device-width: 736px){
   .custom-menu-3 {
       text-align: left;
+  }
+  .MyNavSearch{
+    text-align: center;
   }
   .custom-toggle {
       display: block;
@@ -1147,6 +1159,9 @@ body {
   }
   .custom-toggle {
       display: block;
+  }
+  .MyNavSearch{
+    text-align: center;
   }
   .myMainMenu li a{
     font-size: 16px;
@@ -1307,7 +1322,38 @@ body {
     width: 100%;
   }
 }
-@media only screen and (min-device-width: 872px) and (max-device-width: 1366px) {
+@media only screen and (min-device-width: 872px) and (max-device-width: 1024px) {
+  .contentLayout{
+    background-color: white;
+    margin: 0 auto;
+    margin-top: -48px;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+  }
+  .productLayout{
+    padding: 8px;
+  }
+  .carSpecification table{
+    width: 100%;
+  }
+  .ImageArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .SendowlArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
   .contentLayout{
     background-color: white;
     margin: 0 auto;
