@@ -5,6 +5,31 @@ body {
 .MyNavSearch{
   text-align: right;
 }
+/*Footer Menu*/
+.CarMakes ul {
+  list-style: none;
+  padding: 0;
+}
+.CarMakes ul li {
+  padding-left: 1.3em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.CarMakes ul li a{
+  color: white;
+}
+.CarMakes ul li a:hover{
+  text-decoration: none;
+  font-size: 17px;
+}
+.CarMakes ul li:before {
+  content: "\f054"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.4em; /* same as padding-left set on li */
+}
+/*End Footer Menu*/
 /*Filter CSS*/
 .myPurchase{
   background-color: #7a8690;
@@ -148,6 +173,7 @@ body {
 .Rating{
   width: 70%;
   float: right;
+  text-align: right;
 }
 .productLayout {
   max-width: 1160px;
@@ -213,6 +239,7 @@ body {
   border: 1px solid #ddd;
   color: black;
   font-size: 15px;
+  font-weight: 400;
 }
 .ManualArea th, td {
     text-align: left;
@@ -390,13 +417,13 @@ body {
   background-color: #e1e9ee;
   position: fixed;
   width: 100%;
-  top: 110px;
+  top: 108px;
   z-index: 3;
 }
 .BetMenu{
   background-color: #798690;
   width: 100%;
-  top: 110px;
+  top: 108px;
   z-index: 4;
   height: 80px;
   color: black;
@@ -484,7 +511,7 @@ body {
 .custom-wrapper {
   margin-bottom: 1em;
   -webkit-font-smoothing: antialiased;
-  height: 2.78em;
+  height: 43px;
   overflow: hidden;
   -webkit-transition: height 0.5s;
   -moz-transition: height 0.5s;
@@ -788,6 +815,9 @@ body {
   .custom-menu-3 {
       text-align: left;
   }
+  .MyNavSearch{
+    text-align: center;
+  }
   .custom-toggle {
       display: block;
   }
@@ -859,6 +889,7 @@ body {
     clear: both;
     width: 100%;
     padding: 0;
+    text-align: left;
   }
   .carSpecification table{
     width: 100%;
@@ -870,6 +901,9 @@ body {
 @media only screen and (min-device-width: 480px) and (max-device-width: 568px){
   .custom-menu-3 {
       text-align: left;
+  }
+  .MyNavSearch{
+    text-align: center;
   }
   .custom-toggle {
       display: block;
@@ -942,6 +976,7 @@ body {
     clear: both;
     width: 100%;
     padding: 0;
+    text-align: left;
   }
   .carSpecification table{
     width: 100%;
@@ -953,6 +988,9 @@ body {
 @media only screen and (min-device-width: 568px) and (max-device-width: 667px){
   .custom-menu-3 {
       text-align: left;
+  }
+  .MyNavSearch{
+    text-align: center;
   }
   .custom-toggle {
       display: block;
@@ -1025,6 +1063,7 @@ body {
     clear: both;
     width: 100%;
     padding: 0;
+    text-align: left;
   }
   .carSpecification table{
     width: 100%;
@@ -1036,6 +1075,9 @@ body {
 @media only screen and (min-device-width: 667px) and (max-device-width: 736px){
   .custom-menu-3 {
       text-align: left;
+  }
+  .MyNavSearch{
+    text-align: center;
   }
   .custom-toggle {
       display: block;
@@ -1108,6 +1150,7 @@ body {
     clear: both;
     width: 100%;
     padding: 0;
+    text-align: left;
   }
   .carSpecification table{
     width: 100%;
@@ -1122,6 +1165,9 @@ body {
   }
   .custom-toggle {
       display: block;
+  }
+  .MyNavSearch{
+    text-align: center;
   }
   .myMainMenu li a{
     font-size: 16px;
@@ -1191,6 +1237,7 @@ body {
     clear: both;
     width: 100%;
     padding: 0;
+    text-align: left;
   }
   .carSpecification table{
     width: 100%;
@@ -1274,6 +1321,7 @@ body {
     clear: both;
     width: 100%;
     padding: 0;
+    text-align: left;
   }
   .carSpecification table{
     width: 100%;
@@ -1282,7 +1330,38 @@ body {
     width: 100%;
   }
 }
-@media only screen and (min-device-width: 872px) and (max-device-width: 1366px) {
+@media only screen and (min-device-width: 872px) and (max-device-width: 1024px) {
+  .contentLayout{
+    background-color: white;
+    margin: 0 auto;
+    margin-top: -48px;
+  }
+  .productDesc{
+    color: black;
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    position: relative;
+  }
+  .productLayout{
+    padding: 8px;
+  }
+  .carSpecification table{
+    width: 100%;
+  }
+  .ImageArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+  }
+  .SendowlArea{
+    clear: both;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
   .contentLayout{
     background-color: white;
     margin: 0 auto;

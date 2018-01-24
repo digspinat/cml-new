@@ -1,7 +1,7 @@
 baseurl = "https://cml-new.netlify.com/"
 languageCode = "en-us"
-title = "Carmanuls Lib"
-author = "Carmanuls Lib"
+title = "Carmanuals Lib"
+author = "Carmanuals Lib"
 copyright = "&copy; 2016. All rights reserved."
 contentDir = "content"
 layoutDir = "layouts"
@@ -19,8 +19,7 @@ canonifyurls = true
   manual = "/:section/:title/"
 [params]
   # Shown in the home page
-  subtitle = "German Car Manuals"
-  brand = "Carmanuls Lib"
+  subtitle = "Carmanuals Lib"
   googleAnalytics = "Your Google Analytics tracking ID"
   disqus = "Your Disqus shortname"
   # CSS name for highlight.js

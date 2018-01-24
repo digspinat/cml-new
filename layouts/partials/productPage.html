@@ -31,16 +31,19 @@
                 {{end}}
               </h4>
           </div>
-          <div class="CurrencyArea">
-            <div class="Currency" style="margin-top:0px;">
-              <h4 style="margin:0;padding:0;" class="productTitle"><span class="BlueText" style="font-size:larger;">{{.Params.sendowlprice}}</span></h4>
+
+          <div class="sendOwl" style="clear:both;width: 67%;">
+            <div class="CurrencyArea">
+              <div class="Currency" style="margin-top:0px;">
+                <h4 style="margin:0;padding:0;" class="productTitle"><span class="BlueText" style="font-size:larger;">{{.Params.sendowlprice}}</span></h4>
+              </div>
+              <div class="Rating" style="color:black;margin-top:0px;">
+                <h4 style="margin:0;padding:0;" class="productTitle"><span class="BlueText" style="font-size:larger;">{{.Params.manualstatus}}</span></h4>
+              </div>
             </div>
-            <div class="Rating" style="color:black;margin-top:0px;">
-              <h4 style="margin:0;padding:0;" class="productTitle"><span class="BlueText" style="font-size:larger;">{{.Params.manualstatus}}</span></h4>
+            <div style="clear:both;">
+              {{.Params.sendowl | safeHTML }}
             </div>
-          </div>
-          <div class="sendOwl" style="clear:both;">
-            {{.Params.sendowl | safeHTML }}
           </div>
           <div class="addToCart">
             {{.Params.addtocart | markdownify}}
@@ -57,28 +60,28 @@
         <h3 class="BlueText">Manual Specification</h3>
         <table>
           <tr>
-            <th>Manual Type:</th>
-            <th>{{.Params.mstype}}</th>
+            <td>Manual Type:</td>
+            <td>{{.Params.mstype}}</td>
           </tr>
           <tr>
-            <th>No. of Pages:</th>
-            <th>{{.Params.mspages}}</th>
+            <td>No. of Pages:</td>
+            <td>{{.Params.mspages}}</td>
           </tr>
           <tr>
-            <th>File Size:</th>
-            <th>{{.Params.msfilesize}}</th>
+            <td>File Size:</td>
+            <td>{{.Params.msfilesize}}</td>
           </tr>
           <tr>
-            <th>Format:</th>
-            <th>{{.Params.msformat}}</th>
+            <td>Format:</td>
+            <td>{{.Params.msformat}}</td>
           </tr>
           <tr>
-            <th>Language:</th>
-            <th>{{.Params.mslanguage}}</th>
+            <td>Language:</td>
+            <td>{{.Params.mslanguage}}</td>
           </tr>
           <tr>
-            <th>Suitable for:</th>
-            <th>{{.Params.mssuitable}}</th>
+            <td>Suitable for:</td>
+            <td>{{.Params.mssuitable}}</td>
           </tr>
         </table>
       </div>
@@ -87,34 +90,34 @@
         <div class="carSpecification">
           <table>
             <tr>
-              <th>Make:</th>
-              <th>{{.Params.makes}}</th>
+              <td>Make:</td>
+              <td>{{.Params.makes}}</td>
             </tr>
             <tr>
-              <th>Series:</th>
-              <th>{{.Params.series}}</th>
+              <td>Series:</td>
+              <td>{{.Params.series}}</td>
             </tr>
             <tr>
-              <th>Sub Series:</th>
-              <th>{{.Params.subseries}}</th>
+              <td>Sub Series:</td>
+              <td>{{.Params.subseries}}</td>
             </tr>
             <tr>
-              <th>Platform:</th>
-              <th>{{.Params.platform}}</th>
+              <td>Platform:</td>
+              <td>{{.Params.platform}}</td>
             </tr>
             <tr>
-              <th>Year:</th>
-              <th>{{.Params.years}}</th>
+              <td>Year:</td>
+              <td>{{.Params.years}}</td>
             </tr>
             <tr>
-              <th>Bodytype:</th>
-              <th>{{range .Params.carspecs.carspecbodytype}}
+              <td>Bodytype:</td>
+              <td>{{range .Params.carspecs.carspecbodytype}}
                 {{ .partialbodytypename }},
-              {{end}}</th>
+              {{end}}</td>
             </tr>
             <tr>
-              <th>Fueltype:</th>
-              <th>{{.Params.fueltype}}</th>
+              <td>Fueltype:</td>
+              <td>{{.Params.fueltype}}</td>
             </tr>
           </table>
         </div>
@@ -158,8 +161,8 @@
         <h3 class="BlueText">Customer Reviews</h3>
         {{range .Params.manualreview}}
           <div class="ReviewBox">
-            <p><strong>{{.reviewItemNickname}}</strong></p>
-            <h4 style="clear:both;" class="productTitle">
+            <p style="margin: 0;"><strong>{{.reviewItemNickname}}</strong></p>
+            <h4 style="clear:both;margin-top: 3px;margin-bottom: 3px;" class="productTitle">
               {{ $myempty := sub 5 .reviewItemRating }}
               {{if eq $myempty 0}}
                 <!-- <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span> -->
@@ -214,8 +217,8 @@
               {{end}}
               <span class="BlueText">{{.reviewItemTitle}}</span>
             </h4>
-            <p>{{.reviewItemDate}}</p>
-            <p>{{.reviewItemDescr | markdownify}}</p>
+            <p style="margin-top: 3px;margin-bottom: 3px;">{{.reviewItemDate}}</p>
+            <p style="margin-top: 10px;">{{.reviewItemDescr | markdownify}}</p>
           </div>
         {{end}}
     </div>

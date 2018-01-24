@@ -173,6 +173,7 @@ body {
 .Rating{
   width: 70%;
   float: right;
+  text-align: right;
 }
 .productLayout {
   max-width: 1160px;
@@ -238,6 +239,7 @@ body {
   border: 1px solid #ddd;
   color: black;
   font-size: 15px;
+  font-weight: 400;
 }
 .ManualArea th, td {
     text-align: left;
@@ -887,6 +889,7 @@ body {
     clear: both;
     width: 100%;
     padding: 0;
+    text-align: left;
   }
   .carSpecification table{
     width: 100%;
@@ -973,6 +976,7 @@ body {
     clear: both;
     width: 100%;
     padding: 0;
+    text-align: left;
   }
   .carSpecification table{
     width: 100%;
@@ -1059,6 +1063,7 @@ body {
     clear: both;
     width: 100%;
     padding: 0;
+    text-align: left;
   }
   .carSpecification table{
     width: 100%;
@@ -1145,6 +1150,7 @@ body {
     clear: both;
     width: 100%;
     padding: 0;
+    text-align: left;
   }
   .carSpecification table{
     width: 100%;
@@ -1231,6 +1237,7 @@ body {
     clear: both;
     width: 100%;
     padding: 0;
+    text-align: left;
   }
   .carSpecification table{
     width: 100%;
@@ -1314,6 +1321,7 @@ body {
     clear: both;
     width: 100%;
     padding: 0;
+    text-align: left;
   }
   .carSpecification table{
     width: 100%;
