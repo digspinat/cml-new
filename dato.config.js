@@ -1,9 +1,13 @@
 var $ = require("jquery");
+var parser = require('json-parser');
 
 module.exports = (dato, root, i18n) => {
   // console.log(dato.manuals);
   root.directory("content/manuals", (dir) => {
     dato.manuals.forEach((manuals) => {
+        // console.log(manuals.carSpecs.csalgoliayears);
+        var object = JSON.stringify(manuals.carSpecs.csalgoliayears);
+        var newobj = JSON.parse(object);
         dir.createPost(`${manuals.currencyUrl}.${manuals.manualCurrency}.md`, "yaml", {
           frontmatter: {
             title: manuals.manualTitle,
@@ -41,7 +45,8 @@ module.exports = (dato, root, i18n) => {
             mstype: manuals.manualSpecs.msType,
             manualporp: manuals.propCons.pro,
             manualcons: manuals.propCons.con,
-            cptitle: manuals.manualTitleCp
+            cptitle: manuals.manualTitleCp,
+            yearscp: newobj
           },
           content: manuals.partialPreview.previewDesc
         });
