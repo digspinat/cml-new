@@ -19,9 +19,14 @@
           </div> -->
           <div class="CurrencyArea">
             <div class="productTitle" style="margin-top:21px;font-weight:bold;">
-              {{.Params.makes}} <br>
-              {{.Params.mstype}} <br>
-              {{.Params.yearscp}}
+              {{.Params.makes}} <br><br>
+              {{.Params.mstype}} <br><br>
+              {{range .Params.yearscp}}
+                <span>{{.}}</span>,
+              {{end}} <br><br>
+              {{.Params.series}},
+              {{.Params.subseries}},
+              {{.Params.platform}}
             </div>
           </div>
           <div class="CurrencyArea">
