@@ -1,6 +1,6 @@
 <div class="mainContentLayout">
   <div class="productLayout" style="margin-top:20px;">
-      <!-- <h3 class="productTitle">{{.Title}}</h3> -->
+      <h3 class="productTitle">{{.Title}}</h3>
       <div class="productImageArea">
         <div class="ImageArea">
           <img src="{{.Params.proimage}}" class="pure-img-responsive" alt="">
@@ -29,7 +29,7 @@
               {{.Params.platform}}
             </div>
           </div>
-          <div class="CurrencyArea">
+          <div class="CurrencyArea" style="margin-top:-15px;">
               <h4 class="productTitle"><span class="BlueText"></span>
                 {{ $empty := sub 5 .Params.overallrate }}
                 {{range seq .Params.overallrate}}
@@ -57,87 +57,46 @@
           <div class="addToCart">
             {{.Params.addtocart | markdownify}}
           </div>
+          <div class="addToCart">
+            <h3 class="BlueText">Car Specification</h3>
+            <div class="carSpecification">
+              <table>
+                <tr>
+                  <td>Make:</td>
+                  <td>{{.Params.makes}}</td>
+                </tr>
+                <tr>
+                  <td>Series:</td>
+                  <td>{{.Params.series}}</td>
+                </tr>
+                <tr>
+                  <td>Sub Series:</td>
+                  <td>{{.Params.subseries}}</td>
+                </tr>
+                <tr>
+                  <td>Platform:</td>
+                  <td>{{.Params.platform}}</td>
+                </tr>
+                <tr>
+                  <td>Year:</td>
+                  <td>{{.Params.years}}</td>
+                </tr>
+                <tr>
+                  <td>Bodytype:</td>
+                  <td>{{range .Params.carspecs.carspecbodytype}}
+                    {{ .partialbodytypename }},
+                  {{end}}</td>
+                </tr>
+                <tr>
+                  <td>Fueltype:</td>
+                  <td>{{.Params.fueltype}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
           <!--Car Spec-->
         </div>
       </div>
-  </div>
-</div>
-<div class="ManArea" style="margin-top:20px;">
-  <div class="productLayout">
-    <div class="MannProp">
-      <div class="ManualArea">
-        <h3 class="BlueText">Manual Specification</h3>
-        <table>
-          <tr>
-            <td>Manual Type:</td>
-            <td>{{.Params.mstype}}</td>
-          </tr>
-          <tr>
-            <td>No. of Pages:</td>
-            <td>{{.Params.mspages}}</td>
-          </tr>
-          <tr>
-            <td>File Size:</td>
-            <td>{{.Params.msfilesize}}</td>
-          </tr>
-          <tr>
-            <td>Format:</td>
-            <td>{{.Params.msformat}}</td>
-          </tr>
-          <tr>
-            <td>Language:</td>
-            <td>{{.Params.mslanguage}}</td>
-          </tr>
-          <tr>
-            <td>Suitable for:</td>
-            <td>{{.Params.mssuitable}}</td>
-          </tr>
-        </table>
-      </div>
-      <div class="PropsCons">
-        <h3 class="BlueText">Car Specification</h3>
-        <div class="carSpecification">
-          <table>
-            <tr>
-              <td>Make:</td>
-              <td>{{.Params.makes}}</td>
-            </tr>
-            <tr>
-              <td>Series:</td>
-              <td>{{.Params.series}}</td>
-            </tr>
-            <tr>
-              <td>Sub Series:</td>
-              <td>{{.Params.subseries}}</td>
-            </tr>
-            <tr>
-              <td>Platform:</td>
-              <td>{{.Params.platform}}</td>
-            </tr>
-            <tr>
-              <td>Year:</td>
-              <td>{{.Params.years}}</td>
-            </tr>
-            <tr>
-              <td>Bodytype:</td>
-              <td>{{range .Params.carspecs.carspecbodytype}}
-                {{ .partialbodytypename }},
-              {{end}}</td>
-            </tr>
-            <tr>
-              <td>Fueltype:</td>
-              <td>{{.Params.fueltype}}</td>
-            </tr>
-          </table>
-        </div>
-        <!-- <div class="Props">
-          {{.Params.manualporp | markdownify}}
-        </div>
-        <div class="Cons">
-          {{.Params.manualcons | markdownify}}
-        </div> -->
-      </div>
-    </div>
   </div>
 </div>
 <div class="ManArea" style="margin-top:20px;">
@@ -233,7 +192,45 @@
     </div>
   </div>
 </div>
-<div class="ManArea" style="margin-top:20px;text-align:center;">
-  {{.Params.sendowl | safeHTML }}
+<div class="ManArea">
+  <div class="productLayout">
+    <div class="MannProp">
+      <div class="ManualArea">
+        <h3 class="BlueText">Manual Specification</h3>
+        <table>
+          <tr>
+            <td>Manual Type:</td>
+            <td>{{.Params.mstype}}</td>
+          </tr>
+          <tr>
+            <td>No. of Pages:</td>
+            <td>{{.Params.mspages}}</td>
+          </tr>
+          <tr>
+            <td>File Size:</td>
+            <td>{{.Params.msfilesize}}</td>
+          </tr>
+          <tr>
+            <td>Format:</td>
+            <td>{{.Params.msformat}}</td>
+          </tr>
+          <tr>
+            <td>Language:</td>
+            <td>{{.Params.mslanguage}}</td>
+          </tr>
+          <tr>
+            <td>Suitable for:</td>
+            <td>{{.Params.mssuitable}}</td>
+          </tr>
+        </table>
+      </div>
+      <div class="PropsCons" style="text-align:right;line-height:300px;">
+        {{ .Params.sendowl | safeHTML }}
+      </div>
+    </div>
+  </div>
 </div>
+<!-- <div class="ManArea" style="margin-top:20px;text-align:center;">
+
+</div> -->
 <br>

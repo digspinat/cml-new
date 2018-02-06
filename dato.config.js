@@ -53,52 +53,50 @@ module.exports = (dato, root, i18n) => {
       });
   });
 
-  // var myall = []
-  // var mybrand = []
-  // var j = 1
-  // var checkbrand = [];
-  // dato.manuals.forEach((Manuals, i) => {
-  //     var content = {};
-  //     var brand = {};
-  //     content['make'] = Manuals.carSpecs.cpMake;
-  //     content['series'] = Manuals.carSpecs.cpSerie;
-  //     content['subseries'] = Manuals.carSpecs.cpSubSerie;
-  //     var platform = Manuals.carSpecs.algoliaPlatform;
-  //     var years = Manuals.carSpecs.csAlgoliaYears;
-  //     // platform = JSON.stringify(platform);
-  //     // years = JSON.stringify(years);
-  //
-  //     content['platform'] = JSON.parse(platform);
-  //     content['years'] = JSON.parse(years);
-  //     content['bodytype'] = Manuals.carSpecs.cpBodyType;
-  //     content['fueltype'] = Manuals.carSpecs.cpFuelType;
-  //     content['title'] = Manuals.manualTitle;
-  //     content['catimage'] = Manuals.imageCatalogPage;
-  //     content['proimage'] = Manuals.imageProductPage;
-  //     content['url'] = Manuals.manualSku;
-  //     content['manualname'] = Manuals.manualName;
-  //     content['currency'] = Manuals.manualCurrency;
-  //     content['price'] = Manuals.manualSendowl.soPrice;
-  //     content['rate'] = Manuals.review.revOverallRating;
-  //     content['cptitle'] = Manuals.manualTitleCp
-  //     myall.push(content)
-  //     if(j == 1){
-  //       checkbrand.push(Manuals.carSpecs.cpMake);
-  //       brand['make'] = Manuals.carSpecs.cpMake;
-  //       brand['url'] = Manuals.carSpecs.cpMake.toLowerCase();
-  //       mybrand.push(brand)
-  //       j++;
-  //     }
-  //     var index = checkbrand.indexOf(Manuals.carSpecs.cpMake);
-  //     if(index == -1){
-  //       checkbrand.push(Manuals.carSpecs.cpMake);
-  //       brand['make'] = Manuals.carSpecs.cpMake;
-  //       brand['url'] = Manuals.carSpecs.cpMake.toLowerCase();
-  //       mybrand.push(brand)
-  //     }
-  // });
-  // root.createDataFile(`data/data.json`, 'json', myall)
-  // root.createDataFile(`data/makes.json`, 'json', mybrand)
+  var myall = []
+  var mybrand = []
+  var j = 1
+  var checkbrand = [];
+  dato.manuals.forEach((Manuals, i) => {
+      var content = {};
+      var brand = {};
+      content['make'] = Manuals.carSpecs.cpMake;
+      content['series'] = Manuals.carSpecs.cpSerie;
+      content['subseries'] = Manuals.carSpecs.cpSubSerie;
+      var platform = JSON.stringify(Manuals.carSpecs.algoliaplatform);
+      var years = JSON.stringify(Manuals.carSpecs.csalgoliayears);
+
+      content['platform'] = JSON.parse(platform);
+      content['years'] = JSON.parse(platform);
+      content['bodytype'] = Manuals.carSpecs.cpBodyType;
+      content['fueltype'] = Manuals.carSpecs.cpFuelType;
+      content['title'] = Manuals.manualTitle;
+      content['catimage'] = Manuals.imageCatalogPage;
+      content['proimage'] = Manuals.imageProductPage;
+      content['url'] = Manuals.manualSku;
+      content['manualname'] = Manuals.manualName;
+      content['currency'] = Manuals.manualCurrency;
+      content['price'] = Manuals.manualSendowl.soPrice;
+      content['rate'] = Manuals.review.revOverallRating;
+      content['cptitle'] = Manuals.manualTitleCp
+      myall.push(content)
+      if(j == 1){
+        checkbrand.push(Manuals.carSpecs.cpMake);
+        brand['make'] = Manuals.carSpecs.cpMake;
+        brand['url'] = Manuals.carSpecs.cpMake.toLowerCase();
+        mybrand.push(brand)
+        j++;
+      }
+      var index = checkbrand.indexOf(Manuals.carSpecs.cpMake);
+      if(index == -1){
+        checkbrand.push(Manuals.carSpecs.cpMake);
+        brand['make'] = Manuals.carSpecs.cpMake;
+        brand['url'] = Manuals.carSpecs.cpMake.toLowerCase();
+        mybrand.push(brand)
+      }
+  });
+  root.createDataFile(`data/data.json`, 'json', myall)
+  root.createDataFile(`data/makes.json`, 'json', mybrand)
 
   root.directory("content/", (dir) => {
     dato.pages.forEach((Page, i) => {

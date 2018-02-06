@@ -6,6 +6,22 @@ body {
   text-align: right;
 }
 /*Footer Menu*/
+.hasFootul li{
+  list-style: none;
+  margin: 0.1em;
+  margin-left: 1em;
+}
+.hasFootul li:before{
+  font-family: 'FontAwesome';
+  content: '\f058';
+  float: left;
+  color: #0085da;
+  margin-left: -1.5em;
+}
+.hasFootul ul{
+  margin-left: -32px;
+  margin-top: 25px;
+}
 .CarMakes ul {
   list-style: none;
   padding: 0;
