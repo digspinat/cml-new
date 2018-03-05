@@ -12,7 +12,14 @@
                   <a href="{{.Permalink}}"><img src="{{.Params.catimage}}" class="pure-img-responsive" alt=""></a>
                 </div>
                 <div class="productDesc">
-                  <a href="{{.Permalink}}">{{ .Title }}</a>
+                  <a href="{{.Permalink}}">{{ .Title }}</a><br>
+                  {{ $empty := sub 5 .Params.overallrate }}
+                  {{range seq .Params.overallrate}}
+                    <span class='myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                  {{end}}
+                  {{range seq $empty}}
+                    <span class='empty-myStart'><i class='fa fa-star' aria-hidden='true'></i></span>
+                  {{end}}
                   <div class="">
                     <p style="float:left;font-weight:bold;font-size:20px;" class="BlueText">
                       {{.Params.sendowlprice}}

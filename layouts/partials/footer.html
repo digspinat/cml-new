@@ -43,7 +43,9 @@
               {{ if isset .Params "addtocart" }}
                 <h4><span class="BlueText">Add to Cart</h4>
                   {{.Params.addtocart | markdownify}}
-              {{ end }}
+              {{ else }}
+                <h4><span class="BlueText">Footer 3</h4>
+              {{end}}
               <!-- <h4><span class="BlueText">Add to Cart</h4>
               <ul>
                 <li>Instant access to your download</li>
@@ -52,7 +54,7 @@
                 <li>No need to renew or pay any extra</li>
               </ul> -->
             </div>
-            <div class="pure-u-1 pure-u-md-1-4" style="text-align:right;">
+            <div class="pure-u-1 pure-u-md-1-4" style="text-align:left;">
               <h4>
                 Currency:&nbsp;
                 <select id="state" style="color:black;">

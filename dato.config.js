@@ -1,5 +1,6 @@
 var $ = require("jquery");
 var parser = require('json-parser');
+var algoliasearch = require('algoliasearch');
 
 module.exports = (dato, root, i18n) => {
   // console.log(dato.manuals);
@@ -95,8 +96,19 @@ module.exports = (dato, root, i18n) => {
         mybrand.push(brand)
       }
   });
+  
+  var client = algoliasearch("YZO8M6AZ6J", "847f24047332edf2bb6a0c1f0181b83e");
+  var index = client.initIndex('cml-new');
+  index.clearIndex(function(err, content) {
+    console.log(content);
+  });
+
   root.createDataFile(`data/data.json`, 'json', myall)
   root.createDataFile(`data/makes.json`, 'json', mybrand)
+
+  index.addObjects(myall, function(err, content) {
+    console.log(content);
+  });
 
   root.directory("content/", (dir) => {
     dato.pages.forEach((Page, i) => {

@@ -20,6 +20,7 @@
     "datocms-client": "^0.3.42"
   },
   "dependencies": {
+    "algoliasearch": "^3.24.12",
     "jquery": "^3.3.1",
     "json-parser": "^1.1.5"
   }
